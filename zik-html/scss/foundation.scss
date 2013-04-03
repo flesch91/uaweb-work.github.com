@@ -293,6 +293,7 @@ header{margin-bottom: emCalc(16px)}
   Social links
 **************/
 .social_wrap{
+  @extend .hide-for-small;
   margin-bottom: emCalc(10px);
   ul{margin: 0; padding: 0}
   li{
@@ -366,6 +367,7 @@ header{margin-bottom: emCalc(16px)}
           left: 3px;
           top: 6px;
         }
+        @media only screen and (max-width: 870px){display: none}
       }
       li.add_news:before{
         content: url("../img/css_triangle_black.png");
@@ -397,6 +399,7 @@ header{margin-bottom: emCalc(16px)}
           font-size: emCalc(10px);
           margin-left: 3px;
           margin-top: 3px;
+          @media only screen and (max-width: $small-screen){margin-top: 0}
         }
       }
       /*  Title news  */
@@ -435,8 +438,9 @@ header{margin-bottom: emCalc(16px)}
     float: left;
     height: 265px;
     background: #3c3f45;
+    position: relative;
     .wrap_p{
-      padding: 30px 30px 17px;
+      padding: 30px 30px 0;
     }
     h3{
       font-family: $Tahoma;
@@ -447,7 +451,36 @@ header{margin-bottom: emCalc(16px)}
     }
     p{
       font-size: emCalc(12px);
+      line-height: normal;
       color: #bebebe;
+    }
+  /* Control slider   */
+    .control_slider{
+      margin: 0 30px 0;
+      position: absolute;
+      bottom: 30px;
+      ul{margin: 0;padding: 0;}
+      li{
+        background: url("../img/slider_select_item.jpg") left top no-repeat;
+        width: 11px;
+        height: 12px;
+        display: block;
+        float: left;
+        list-style: none;
+        cursor: pointer;
+        margin-right: emCalc(2px);
+
+      /*   Active    */
+        &.act{
+          background-position: -11px 0;
+          cursor: default;
+        }
+      }
+      @media only screen and (max-width: 978px) {
+        position: inherit !important;
+        bottom: inherit;
+        margin: 0 0 17px 30px;
+      }
     }
   }
   @media only screen and (max-width: 978px) {
@@ -456,4 +489,89 @@ header{margin-bottom: emCalc(16px)}
       height: auto;
     }
   }
+}
+
+/***************
+  Bloks all lego
+****************/
+//1 - top video blok
+
+/*******************
+  1. Top video blok
+*******************/
+.top-video-blok{
+  header{
+    margin-bottom: 0;
+    h5{
+      font-family: pf_dindisplay_promedium;
+      font-size: emCalc(16px);
+      text-transform: uppercase;
+      color: #2e2e2e;
+      font-weight: normal;
+      display: inline-block;
+      margin-right: emCalc(11px);
+    }
+    .btn-viwe-online{
+      background: #3c3f45;
+      font-size: emCalc(11px);
+      text-decoration: none;
+      color: #ffffff;
+      padding: emCalc(8px) emCalc(8px);
+      @include single-transition(all .2s esae);
+    }
+  }
+/* body video*/
+  .wrap-video{
+    position: relative;
+    .video-picture{}
+    .video-short-text{
+      background: url("../img/gradi_trans_to_black.png") left bottom repeat-x;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 40px 0 0 18px;
+      h4{
+        color: #ffffff;
+        font-size: 13px;
+        line-height: 14px;
+      }
+      .video-data{
+        color: #999999;
+        font-size: emCalc(10px);
+      }
+      .b-icon-tr{
+        background: #60646c;
+        width: 27px;
+        height: 27px;
+        float: right;
+        i{
+          @include css-triangle(6px,#ffffff, left);
+          position: relative;
+          top: 8px;
+          left: 11px;
+        }
+      }
+    }
+  }
+}
+
+
+/*********
+  Footer
+*********/
+$footer_hight_down: emCalc(532px);
+
+html, body {
+  height: 100%;
+}
+.wrap_site{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -$footer_hight_down;
+}
+.push{height: $footer_hight_down/10;}
+.footer{
+  height: $footer_hight_down;
+  background: url("../img/footer_bg_r.jpg") left top repeat-x #2c2d33;
 }

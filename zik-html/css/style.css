@@ -498,7 +498,7 @@ select {
 .hide-for-xlarge {
   display: inherit !important; }
 
-.hide-for-small, .sponsors span,
+.hide-for-small, .sponsors span, .social_wrap,
 .hide-for-medium-down,
 .hide-for-large-down {
   display: none !important; }
@@ -536,7 +536,7 @@ th.hide-for-xlarge {
   .show-for-small {
     display: none !important; }
 
-  .hide-for-small, .sponsors span {
+  .hide-for-small, .sponsors span, .social_wrap {
     display: inherit !important; }
 
   .hide-for-medium,
@@ -544,22 +544,23 @@ th.hide-for-xlarge {
     display: none !important; }
 
   /* Specific visilbity for tables */
-  table.show-for-medium, table.show-for-medium-up, table.hide-for-small {
+  table.show-for-medium, table.show-for-medium-up, table.hide-for-small, table.social_wrap {
     display: table; }
 
-  thead.show-for-medium, thead.show-for-medium-up, thead.hide-for-small {
+  thead.show-for-medium, thead.show-for-medium-up, thead.hide-for-small, thead.social_wrap {
     display: table-header-group !important; }
 
-  tbody.show-for-medium, tbody.show-for-medium-up, tbody.hide-for-small {
+  tbody.show-for-medium, tbody.show-for-medium-up, tbody.hide-for-small, tbody.social_wrap {
     display: table-row-group !important; }
 
-  tr.show-for-medium, tr.show-for-medium-up, tr.hide-for-small {
+  tr.show-for-medium, tr.show-for-medium-up, tr.hide-for-small, tr.social_wrap {
     display: table-row !important; }
 
-  td.show-for-medium, td.show-for-medium-up, td.hide-for-small,
+  td.show-for-medium, td.show-for-medium-up, td.hide-for-small, td.social_wrap,
   th.show-for-medium,
   th.show-for-medium-up,
-  th.hide-for-small {
+  th.hide-for-small,
+  th.social_wrap {
     display: table-cell !important; } }
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 80em) {
@@ -4138,6 +4139,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
           position: absolute;
           left: 3px;
           top: 6px; }
+        @media only screen and (max-width: 870px) {
+          .all_news .list_typ_news ul li.add_news {
+            display: none; } }
       .all_news .list_typ_news ul li.add_news:before {
         content: url("../img/css_triangle_black.png");
         position: absolute;
@@ -4165,6 +4169,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
           font-size: 0.625em;
           margin-left: 3px;
           margin-top: 3px; }
+          @media only screen and (max-width: 48em) {
+            .all_news .wrap_list_news li .hour span {
+              margin-top: 0; } }
       .all_news .wrap_list_news li .title_new {
         padding-left: 50px;
         *zoom: 1; }
@@ -4204,9 +4211,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     width: 36.82539682539683%;
     float: left;
     height: 265px;
-    background: #3c3f45; }
+    background: #3c3f45;
+    position: relative;
+    /* Control slider   */ }
     .wrap_promo_slider .short_text .wrap_p {
-      padding: 30px 30px 17px; }
+      padding: 30px 30px 0; }
     .wrap_promo_slider .short_text h3 {
       font-family: Tahoma, Geneva, Kalimati, sans-serif;
       font-size: 1.25em;
@@ -4215,8 +4224,111 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
       font-weight: normal; }
     .wrap_promo_slider .short_text p {
       font-size: 0.75em;
+      line-height: normal;
       color: #bebebe; }
+    .wrap_promo_slider .short_text .control_slider {
+      margin: 0 30px 0;
+      position: absolute;
+      bottom: 30px; }
+      .wrap_promo_slider .short_text .control_slider ul {
+        margin: 0;
+        padding: 0; }
+      .wrap_promo_slider .short_text .control_slider li {
+        background: url("../img/slider_select_item.jpg") left top no-repeat;
+        width: 11px;
+        height: 12px;
+        display: block;
+        float: left;
+        list-style: none;
+        cursor: pointer;
+        margin-right: 0.125em;
+        /*   Active    */ }
+        .wrap_promo_slider .short_text .control_slider li.act {
+          background-position: -11px 0;
+          cursor: default; }
+      @media only screen and (max-width: 978px) {
+        .wrap_promo_slider .short_text .control_slider {
+          position: inherit !important;
+          bottom: inherit;
+          margin: 0 0 17px 30px; } }
   @media only screen and (max-width: 978px) {
     .wrap_promo_slider .foto_, .wrap_promo_slider .short_text {
       width: 100%;
       height: auto; } }
+
+/***************
+  Bloks all lego
+****************/
+/*******************
+  1. Top video blok
+*******************/
+.top-video-blok {
+  /* body video*/ }
+  .top-video-blok header {
+    margin-bottom: 0; }
+    .top-video-blok header h5 {
+      font-family: pf_dindisplay_promedium;
+      font-size: 1em;
+      text-transform: uppercase;
+      color: #2e2e2e;
+      font-weight: normal;
+      display: inline-block;
+      margin-right: 0.6875em; }
+    .top-video-blok header .btn-viwe-online {
+      background: #3c3f45;
+      font-size: 0.6875em;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 0.5em 0.5em;
+      -webkit-transition: all 0.2s esae 300ms ease-out;
+      -moz-transition: all 0.2s esae 300ms ease-out;
+      transition: all 0.2s esae 300ms ease-out; }
+  .top-video-blok .wrap-video {
+    position: relative; }
+    .top-video-blok .wrap-video .video-short-text {
+      background: url("../img/gradi_trans_to_black.png") left bottom repeat-x;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 40px 0 0 18px; }
+      .top-video-blok .wrap-video .video-short-text h4 {
+        color: #ffffff;
+        font-size: 13px;
+        line-height: 14px; }
+      .top-video-blok .wrap-video .video-short-text .video-data {
+        color: #999999;
+        font-size: 0.625em; }
+      .top-video-blok .wrap-video .video-short-text .b-icon-tr {
+        background: #60646c;
+        width: 27px;
+        height: 27px;
+        float: right; }
+        .top-video-blok .wrap-video .video-short-text .b-icon-tr i {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border: solid 6px;
+          border-color: transparent transparent transparent white;
+          position: relative;
+          top: 8px;
+          left: 11px; }
+
+/*********
+  Footer
+*********/
+html, body {
+  height: 100%; }
+
+.wrap_site {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto-33.25em; }
+
+.push {
+  height: 3.325em; }
+
+.footer {
+  height: 33.25em;
+  background: url("../img/footer_bg_r.jpg") left top repeat-x #2c2d33; }
