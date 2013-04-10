@@ -2,32 +2,28 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/scss/foundation/components/_top-bar.scss" line="220" />
+    <bookmark url="file://$PROJECT_DIR$/scss/foundation.scss" line="615" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cc12afa-8fc4-4a82-a6de-a521a2fed379" name="Default" comment="Правки по слайдеру і виправлення для респонсіву +  блок відео топ і підключення шрифта">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/fontscore.com_p_pfdindisplaypromedium.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/fontscore.com_p_pfdindisplaypromedium.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/fontscore.com_p_pfdindisplaypromedium.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/footer_bg_r.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gradi_trans_to_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/slider_select_item.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/video_picture.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/fontscore.com_p_pfdindisplaypromedium.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/foundation.scss" afterPath="$PROJECT_DIR$/scss/foundation.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="zik.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365031081243" ignored="false" />
+    <file path="/Dummy.txt" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365627523869" ignored="false" />
     <file path="/index.php" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363645912742" ignored="false" />
     <file path="/a.coffee" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363647017667" ignored="false" />
     <file path="/a.less" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363647022134" ignored="false" />
     <file path="/style.sass" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363648845624" ignored="false" />
-    <file path="/foundation.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365029970598" ignored="false" />
+    <file path="/foundation.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365626849388" ignored="false" />
     <file path="/style.css" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1364674275536" ignored="false" />
     <file path="/README." changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363651405583" ignored="false" />
     <file path="/README" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363651887139" ignored="false" />
-    <file path="/index.html" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365029064945" ignored="false" />
+    <file path="/index.html" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365626220464" ignored="false" />
     <file path="/_top-bar.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363965202006" ignored="false" />
     <file path="/dummy.xml" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363963460953" ignored="false" />
     <file path="/css.css" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363969376389" ignored="false" />
@@ -59,26 +55,31 @@
     <fileColor scope="Changed Files" color="a2a6a0" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.54489547">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="194" column="65" selection-start="8317" selection-end="8326" vertical-scroll-proportion="-25.73077">
-                  <folding>
-                    <marker date="1365029075023" expanded="true" signature="584:653" placeholder="..." />
-                    <marker date="1365029075023" expanded="true" signature="604:641" placeholder="{...}" />
-                  </folding>
+                <state line="269" column="41" selection-start="12955" selection-end="12955" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="foundation.scss" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="foundation.scss" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/foundation.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="533" column="23" selection-start="14769" selection-end="14769" vertical-scroll-proportion="0.40348837">
-                  <folding />
+                <state line="806" column="30" selection-start="21599" selection-end="21599" vertical-scroll-proportion="0.4360465">
+                  <folding>
+                    <element signature="e#14156#15410#0" expanded="false" />
+                    <element signature="e#17154#19368#0" expanded="false" />
+                    <element signature="e#17916#18579#2" expanded="true" />
+                    <element signature="e#19383#19439#0" expanded="false" />
+                    <element signature="e#19530#20884#0" expanded="false" />
+                    <element signature="e#20962#21537#0" expanded="false" />
+                    <element signature="e#21645#23357#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -114,10 +115,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_foundation-global.scss" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="_foundation-global.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/foundation/_foundation-global.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="170" column="17" selection-start="6003" selection-end="6003" vertical-scroll-proportion="0.7627907">
+                <state line="183" column="29" selection-start="6430" selection-end="6430" vertical-scroll-proportion="0.42906976">
                   <folding />
                 </state>
               </provider>
@@ -133,7 +134,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitLogSettings">
     <option name="myDateState">
@@ -235,52 +236,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zik" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zik-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zik" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zik-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foundation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zik" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zik-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -296,10 +251,10 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="296" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="settings" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Project/holos_c" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Project/compas_work" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="299" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="978" />
@@ -428,7 +383,11 @@
       <created>1365030871903</created>
       <updated>1365030871903</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Правки по слайдеру і виправлення для респонсіву +  блок відео топ і підключення шрифта">
+      <created>1365031208021</created>
+      <updated>1365031208021</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -452,16 +411,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12860192" sideWeight="0.84538376" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1339381" sideWeight="0.84538376" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -470,6 +427,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -585,9 +544,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/ie8_grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="17" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="38" column="17" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/normalize.scss">
@@ -605,20 +562,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/foundation/components/_custom-forms.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="62" selection-start="1890" selection-end="1890" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/foundation/components/_forms.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="51" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/foundation/components/_top-bar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="25" selection-start="1656" selection-end="1656" vertical-scroll-proportion="0.0">
@@ -628,32 +571,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/fonts/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="41" selection-start="114" selection-end="137" vertical-scroll-proportion="0.09736541">
+        <state line="5" column="41" selection-start="114" selection-end="137" vertical-scroll-proportion="0.09736541" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/foundation/components/_forms.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="51" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/foundation/components/_custom-forms.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="62" selection-start="1890" selection-end="1890" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/foundation/_foundation-global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="29" selection-start="6430" selection-end="6430" vertical-scroll-proportion="0.42906976">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="65" selection-start="8317" selection-end="8326" vertical-scroll-proportion="-25.73077">
-          <folding>
-            <marker date="1365029075023" expanded="true" signature="584:653" placeholder="..." />
-            <marker date="1365029075023" expanded="true" signature="604:641" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/foundation/_foundation-global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="17" selection-start="6003" selection-end="6003" vertical-scroll-proportion="0.7627907">
+        <state line="269" column="41" selection-start="12955" selection-end="12955" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/foundation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="533" column="23" selection-start="14769" selection-end="14769" vertical-scroll-proportion="0.40348837">
-          <folding />
+        <state line="806" column="30" selection-start="21599" selection-end="21599" vertical-scroll-proportion="0.4360465">
+          <folding>
+            <element signature="e#14156#15410#0" expanded="false" />
+            <element signature="e#17154#19368#0" expanded="false" />
+            <element signature="e#17916#18579#2" expanded="true" />
+            <element signature="e#19383#19439#0" expanded="false" />
+            <element signature="e#19530#20884#0" expanded="false" />
+            <element signature="e#20962#21537#0" expanded="false" />
+            <element signature="e#21645#23357#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

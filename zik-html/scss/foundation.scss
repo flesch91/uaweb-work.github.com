@@ -58,6 +58,13 @@
 }
 .clearfix{@include clearfix();}
 
+@mixin seperator($bg_color){
+  height: 6px;
+  width: 100%;
+  background-color: $bg_color;
+}
+.m_top-25{margin-top: 25px}
+
 $Tahoma: Tahoma,Geneva,Kalimati,sans-serif;
 
 /********
@@ -494,7 +501,10 @@ header{margin-bottom: emCalc(16px)}
 /***************
   Bloks all lego
 ****************/
-//1 - top video blok
+//1 - Top video blok
+//2 - Analitic top list
+//3 - Now channel
+//4 - Box more category
 
 /*******************
   1. Top video blok
@@ -523,6 +533,7 @@ header{margin-bottom: emCalc(16px)}
 /* body video*/
   .wrap-video{
     position: relative;
+    margin-bottom: emCalc(11px);
     .video-picture{}
     .video-short-text{
       background: url("../img/gradi_trans_to_black.png") left bottom repeat-x;
@@ -553,6 +564,321 @@ header{margin-bottom: emCalc(16px)}
       }
     }
   }
+}
+
+/*********************
+ 2. Analitic top list
+**********************/
+.analitic_top_list{
+  header{
+    margin-bottom: 0;
+    h5{
+      font-family: pf_dindisplay_promedium;
+      font-size: emCalc(16px);
+      text-transform: uppercase;
+      color: #2e2e2e;
+      font-weight: normal;
+      display: inline-block;
+      margin-right: emCalc(11px);
+    }
+  }
+  /* List news  */
+  ul{margin: 0;padding: 0}
+  li{
+    border-top: 1px solid #f5f5f5;
+    padding-bottom:  emCalc(21px);
+    margin-bottom: emCalc(18px);
+    list-style: none;
+    &.act{
+      background: #f0eeee;
+      .analitic_text{
+        margin: 0 emCalc(19px);
+      }
+    }
+  }
+  .hidden_fix{width: 91px; height: 60px; overflow: hidden; margin-bottom: 10px}
+  .analitic_img{
+    border-top: 3px solid #006e97;
+    padding-top: emCalc(2px);
+    padding-left: emCalc(1px);
+    float: left;
+    margin-right: 13px;
+  }
+  .analitic_link{
+    float: left;
+    width: 61.29032258064516129032%;
+    a{
+      font-size: emCalc(14px);
+      color: #006e97;
+      line-height: emCalc(16px);
+      font-weight: bold;
+      display: block;
+      padding-top: 9px;
+
+      &:hover{
+        color: #008ebc;
+      }
+    }
+  }
+  .analitic_text{
+    margin: 0 emCalc(19px) 0 0;
+    p{
+      font-size: emCalc(12px);
+      line-height: 14px;
+      color: #3d484d;
+      margin-bottom: emCalc(6px);
+    }
+    .analitic_data{
+      font-size: emCalc(10px);
+      color: #b4b2b2;
+      line-height: emCalc(15px);
+    }
+  }
+  @media only screen and (max-width: 870px){
+    .analitic_link{
+      width: 55%;
+      a{font-size: emCalc(14px)}
+    }
+    .analitic_text{margin: 0;}
+    li.act{
+      .analitic_text{margin: 0;}
+    }
+  }
+}
+
+/***************
+ 3. Now channel
+***************/
+.now_channel{
+  border-top: 1px solid #e6e6e6;
+  header{
+    margin-bottom: 9px;
+    h6{
+      border-top: 3px solid #006e97;
+      font-size: emCalc(14px);
+      color: #3a3c43;
+      margin: 0;
+      font-weight: normal;
+      display: inline-block;
+    }
+  }
+  ul{margin: 0; padding: 0;}
+  li{
+    list-style: none;
+    padding: 0 emCalc(20px);
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #f8f8f8;
+    min-height: 30px;
+    background: #f5f5f5;
+    vertical-align: middle;
+  }
+  span{
+    color: #006e97;
+    font-size: 11px;
+    padding-right: 10px;
+  }
+  a{
+    font-size: emCalc(12px);
+    color: #666666;
+  }
+  li.act{
+    background: #0b82ae; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBiODJhZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDZlOTciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #0b82ae 0%, #006e97 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0b82ae), color-stop(100%,#006e97)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #0b82ae 0%,#006e97 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #0b82ae 0%,#006e97 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #0b82ae 0%,#006e97 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #0b82ae 0%,#006e97 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b82ae', endColorstr='#006e97',GradientType=0 ); /* IE6-8 */
+    min-height: 33px;
+    border-top: 1px solid #0d97bc;
+    span,a{color: #ffffff}
+  }
+}
+.seperato_line{
+  @include seperator(#ededed);
+  margin-bottom: 0px;
+}
+
+/**********************
+  4. Box more category
+**********************/
+.box_more-category{
+  header{
+    margin-bottom: 0;
+    h5{
+      font-family: pf_dindisplay_promedium;
+      font-size: emCalc(16px);
+      text-transform: uppercase;
+      color: #2e2e2e;
+      font-weight: normal;
+      display: inline-block;
+      margin-right: emCalc(11px);
+    }
+  }
+  /* images block */
+  .box_more-img{
+    width: 162px;
+    height: 106px;
+    position: relative;
+    margin-right: 14px;
+    float: left;
+  /* if =.video display icon  */
+    &.video{
+      .b-icon-tr{
+        background: #3c3f45;
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        i{
+          @include css-triangle(6px,#ffffff, left);
+          position: relative;
+          top: 8px;
+          left: 11px;
+        }
+      }
+    }
+  }
+  /* link */
+  .box_more-link{
+    width: 42.9354838709677419354838%;
+    float: left;
+    a{
+      font-family: pf_dindisplay_promedium;
+      font-size: emCalc(16px);
+      line-height: emCalc(16px);
+      font-weight: normal;
+      color: #0e4f67;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .box_more-data{
+      display: block;
+      font-size: 10px;
+      color: #b4b2b2;
+    }
+    @media only screen and (max-width: 973px){width: 37%;}
+    @media only screen and (max-width: 886px){width: 100%;}
+    @media only screen and (max-width: 767px){width: 42%;}
+  }
+}
+
+/**********************
+  5. Box news list
+**********************/
+.box-news{
+  &{margin-top: 32px;}
+
+  ul{margin: 0; padding: 0;}
+  ul li{
+    padding: 0 0 0 16px;
+    margin-bottom: 10px;
+    list-style: none;
+    background: url("../img/zik_icon.jpg") left 5px no-repeat;
+
+    /*  Link  */
+    a{
+      color: #3d484d;
+      font-size: emCalc(12px);
+      line-height: 15px;
+      display: block;
+    }
+    .data{
+      font-size: emCalc(10px);
+      color: #b4b2b2;
+      display: block;
+
+    }
+  }
+  ul li:first-child{
+    .data{
+      border-bottom: 1px dotted #e9e6e6;
+      padding-bottom: 8px;
+    }
+  }
+  ul li:last-child{margin-bottom: 0}
+}
+
+/****************************
+ 6. foto post (reportash) news
+****************************/
+.foto-post-news{
+/* gallery controll arrow */
+  .arrow_left{
+    margin-top: 16px;
+    height: 174px;
+    width: 24px;
+    background: url("../img/arrow_left_foto_post.png") center center no-repeat #3c3f45;
+    float: left;
+    margin-right: 1px;
+    cursor: pointer;
+  }
+  .arrow_right{
+    margin-top: 16px;
+    height: 174px;
+    width: 24px;
+    background: url("../img/arrow_right_foto_post.png") center center no-repeat #3c3f45;
+    float: left;
+    cursor: pointer;
+  }
+/* left element */
+  .left-photo{
+    margin-top: 16px;
+    float: left;
+    width: 132px;
+    overflow: hidden;
+    margin-right: 1px;
+    .hidden_fix{width: 132px; height: 88px; overflow: hidden}
+    .title{
+      font-size: emCalc(11px);
+      line-height: 12px;
+      color: #efefef;
+      padding: 11px 16px 0;
+      background: #3c3f45;
+      height: 86px;
+    }
+  }
+/* Center element */
+  .center-photo{
+    width: 313px;
+    height: 207px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin-right: 1px;
+    .title{
+      background: url("../img/gradi_trans_to_black_71.png") left top repeat-x;
+      font-size: emCalc(15px);
+      line-height: emCalc(16px);
+      color: #ffffff;
+      height: 71px;
+      padding: 21px 25px 20px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+/* right element */
+  .right-photo{
+    margin-top: 16px;
+    float: left;
+    width: 132px;
+    overflow: hidden;
+    margin-right: 1px;
+    .hidden_fix{width: 132px; height: 88px; overflow: hidden}
+    .title{
+      font-size: emCalc(11px);
+      line-height: 12px;
+      color: #efefef;
+      padding: 11px 16px 0;
+      background: #3c3f45;
+      height: 86px;
+    }
+  }
+  @media only screen and (max-width: 978px){display: none}
 }
 
 
