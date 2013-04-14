@@ -56,6 +56,20 @@
   background: linear-gradient(to bottom,  #f2232e 0%,#b00b12 99%,#780101 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2232e', endColorstr='#780101',GradientType=0 ); /* IE6-8 */
 }
+
+@mixin video_slider_item_bg{
+  background: #03739d; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAzNzM5ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDZlOTciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #03739d 0%, #006e97 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#03739d), color-stop(100%,#006e97)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #03739d 0%,#006e97 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #03739d 0%,#006e97 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #03739d 0%,#006e97 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #03739d 0%,#006e97 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03739d', endColorstr='#006e97',GradientType=0 ); /* IE6-8 */
+
+}
 .clearfix{@include clearfix();}
 
 @mixin seperator($bg_color){
@@ -505,6 +519,9 @@ header{margin-bottom: emCalc(16px)}
 //2 - Analitic top list
 //3 - Now channel
 //4 - Box more category
+//5 - Box news list
+//6 - Video slider
+//7 - Advertising(spam) mini
 
 /*******************
   1. Top video blok
@@ -881,7 +898,247 @@ header{margin-bottom: emCalc(16px)}
   @media only screen and (max-width: 978px){display: none}
 }
 
+/****************
+ 6. Video slider
+*****************/
+.wrap_video_slider{
+  margin-bottom: 25px;
+  header{
+    h5{display: inline-block}
 
+    /* Top menu for video slider */
+    ul{
+      margin: 0;
+      padding: 0;
+      li{
+        list-style: none;
+        margin: 0 6px;
+        float: left;
+        height: emCalc(29px);
+      }
+      a{
+        text-align: center;
+        font-size: emCalc(11px);
+        color: #999999;
+      }
+      a:hover{
+        color: #000000;
+      }
+      /*  Active   */
+      li.active a{color: #000000}
+      li.active{
+        background: url("../img/top_border_for_inks.jpg") left top repeat-x;
+      }
+
+      li.link{
+          font-size: emCalc(11px);
+          color: #006e97;
+          position: relative;
+          margin-top: 5px;
+          cursor: pointer;
+
+          span{border-bottom: 1px dotted #006e97;}
+          i{
+            @include css-triangle(3px, #006e97, top);
+            display: block;
+            float: right;
+            margin-top: emCalc(9px);
+            margin-left: emCalc(5px);
+          }
+        /* Select list */
+          .select_list_links{
+            display: none;
+            margin-top: 20px;
+            width: 100%;
+            border: 1px solid #ddddd2;
+
+            ul{margin: 0; padding: 0; background: #ffffff;}
+            ul li{float: inherit; list-style: none; margin: 0; height: inherit;}
+            ul li a{display: block; text-align: left; font-size: 10px; margin: 0; padding: 4px 5px; border-bottom: 1px solid #ddddd2}
+            ul li:last-child a{border-bottom: none}
+          }
+
+          &:hover{
+            .select_list_links{
+              display: block;
+              position: absolute;
+              z-index: 5;
+
+              li:hover a{background: #006e97; color: #ffffff}
+            }
+          }
+
+        }//Link < --
+      }
+    } //header <--
+
+  /* video controll arrow */
+  .arrow_left{
+    margin-top: 16px;
+    height: 160px;
+    width: 24px;
+    background: url("../img/arrow_left_foto_post.png") center center no-repeat #3c3f45;
+    float: left;
+    margin-right: 1px;
+    cursor: pointer;
+  }
+  .arrow_right{
+    margin-top: 16px;
+    height: 160px;
+    width: 24px;
+    background: url("../img/arrow_right_foto_post.png") center center no-repeat #3c3f45;
+    float: left;
+    cursor: pointer;
+  }
+
+  /* items video element */
+  ul{margin: 0;padding: 0}
+  ul li{float: left; list-style: none;}
+
+  .video-item{
+    margin-top: 16px;
+    float: left;
+    width: 144px;
+    overflow: hidden;
+    margin-right: 1px;
+
+    .hidden_fix{width: 144px; height: 81px; overflow: hidden; position: relative}
+
+    /* Checking this video */
+    &.video_true{
+      .b-icon-tr{
+        background: #60646c;
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        i{
+          @include css-triangle(6px,#ffffff, left);
+          position: relative;
+          top: 8px;
+          left: 11px;
+        }
+      }
+    }
+    /*  Name post  */
+    .title{
+      padding: 12px 11px 0;
+      @include video_slider_item_bg();
+      height: 79px;
+
+      h6{
+        margin: 0 0 5px 0;
+        font-size: 12px;
+        line-height: 12px;
+        color: #ffffff;
+      }
+      /* Time post  */
+      .data{
+        font-size: 10px;
+        line-height: 11px;
+        color: #5da5c0;
+        display: block;
+      }
+    }
+  }
+
+}
+
+
+/*************************
+ 7. Advertising(spam) mini
+**************************/
+.advertising-min{
+  @include clearfix();
+
+  .title-advertising{
+    background: url("../img/border_1px_color_ededed.jpg") left 88% repeat-x;
+    margin-bottom: 8px;
+    span{
+      font-size: emCalc(10px);
+      line-height: emCalc(18px);
+      color: #dbd7d7;
+      background: #ffffff;
+      padding-right: 3px;
+    }
+  }
+  .main-advertising{
+    width: 76.190476190476%;
+    float: left;
+  }
+  .more-information{
+    width: 23.809523809523%;
+    float: left;
+    padding-top: 20px;
+  }
+  .link{
+    font-size: emCalc(11px);
+    color: #006e97;
+    position: relative;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 5px;
+    float: left;
+
+    span{border-bottom: 1px dotted #006e97;}
+    i{
+      @include css-triangle(3px, #006e97, top);
+      display: block;
+      float: right;
+      margin-top: emCalc(9px);
+      margin-left: emCalc(5px);
+    }
+    /* Select list */
+    .select_list_links{
+      display: none;
+      position: absolute;
+      margin-top: 12px;
+      border: 1px solid #ddddd2;
+      width: auto;
+
+      @include single-transition();
+      ul{margin: 0; padding: 0; background: #ffffff;}
+      ul li{float: inherit; list-style: none; margin: 0; height: inherit;}
+      ul li a{
+        display: block;
+        text-align: left;
+        font-size: 10px;
+        margin: 0;
+        padding: 4px 5px;
+        border-bottom: 1px solid #ddddd2;
+        color: #999999;
+      }
+      ul li:last-child a{border-bottom: none}
+    }
+    &:hover{
+      .select_list_links{
+        display: block;
+        z-index: 5;
+
+        li:hover a{background: #006e97; color: #ffffff}
+      }
+    }
+  }
+  .more_info-text{
+
+    font-family: $Tahoma;
+    sup{
+      font-size: 6px;
+      margin-left: 1px;
+    }
+    /* weather icons*/
+    i{
+      background: url("../img/icon_weather.png") left top no-repeat;
+      width: 34px;
+      height: 30px;
+      position: absolute;
+      margin-left: 10px;
+      display: inline-block;
+    }
+  }
+
+
+
+}
 /*********
   Footer
 *********/
