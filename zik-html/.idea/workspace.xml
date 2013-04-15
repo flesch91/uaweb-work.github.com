@@ -2,34 +2,41 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/scss/foundation/components/_top-bar.scss" line="220" />
-    <bookmark url="file://$PROJECT_DIR$/scss/foundation.scss" line="632" />
+    <bookmark url="file://$PROJECT_DIR$/scss/foundation.scss" line="695" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cc12afa-8fc4-4a82-a6de-a521a2fed379" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/banner_480x60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/border_1px_color_ededed.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/foto_post_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_weather.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/video_slider_foto1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/video_slider_foto2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/video_slider_foto3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/video_slider_foto4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ava50x50.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ava50x50_ty2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ava50x50_ty3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/banner_300x250.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/banner_480x60._typ2jpg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/banner_480x60_typ3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bigmir.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/box-img_categorry_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/oil_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/refresh_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/footer_bg_r.jpg" afterPath="$PROJECT_DIR$/img/footer_bg_r.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logo.jpg" afterPath="$PROJECT_DIR$/img/logo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/foundation.scss" afterPath="$PROJECT_DIR$/scss/foundation.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="zik.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365898711978" ignored="false" />
+    <file path="/Dummy.txt" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365898770670" ignored="false" />
     <file path="/index.php" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363645912742" ignored="false" />
     <file path="/a.coffee" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363647017667" ignored="false" />
     <file path="/a.less" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363647022134" ignored="false" />
     <file path="/style.sass" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363648845624" ignored="false" />
-    <file path="/foundation.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365898274899" ignored="false" />
+    <file path="/foundation.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365985251044" ignored="false" />
     <file path="/style.css" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1364674275536" ignored="false" />
     <file path="/README." changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363651405583" ignored="false" />
     <file path="/README" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363651887139" ignored="false" />
-    <file path="/index.html" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365898073316" ignored="false" />
+    <file path="/index.html" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365985331715" ignored="false" />
     <file path="/_top-bar.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363965202006" ignored="false" />
-    <file path="/dummy.xml" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365892528521" ignored="false" />
+    <file path="/dummy.xml" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1365981735031" ignored="false" />
     <file path="/css.css" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363969376389" ignored="false" />
     <file path="/_custom-forms.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1364666328615" ignored="false" />
     <file path="/_forms.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1364665765643" ignored="false" />
@@ -62,33 +69,45 @@
     <splitter split-orientation="horizontal" split-proportion="0.54489547">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="482" column="60" selection-start="25127" selection-end="25127" vertical-scroll-proportion="-20.115385">
+                <state line="1132" column="44" selection-start="57971" selection-end="57971" vertical-scroll-proportion="0.5311751">
                   <folding>
-                    <element signature="tag#div#8;tag#div#0;tag#section#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                    <marker date="1365898076453" expanded="true" signature="584:726" placeholder="..." />
-                    <marker date="1365898076453" expanded="true" signature="677:714" placeholder="{...}" />
+                    <element signature="tag#div#1;tag#aside#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#2;tag#aside#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#3;tag#aside#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <marker date="1365985371664" expanded="true" signature="584:726" placeholder="..." />
+                    <marker date="1365985371664" expanded="true" signature="677:714" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="foundation.scss" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="foundation.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scss/foundation.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1025" column="19" selection-start="27993" selection-end="27993" vertical-scroll-proportion="0.28742516">
+                <state line="85" column="33" selection-start="6271" selection-end="6271" vertical-scroll-proportion="-2.32">
                   <folding>
                     <element signature="e#3377#4040#2" expanded="true" />
-                    <element signature="e#15726#16980#0" expanded="false" />
-                    <element signature="e#15736#16222#0" expanded="false" />
-                    <element signature="e#16252#16978#0" expanded="false" />
-                    <element signature="e#17069#18660#0" expanded="false" />
-                    <element signature="e#18724#20938#0" expanded="false" />
-                    <element signature="e#21100#22454#0" expanded="false" />
-                    <element signature="e#22532#23107#0" expanded="false" />
-                    <element signature="e#28373#30315#0" expanded="false" />
+                    <element signature="e#4873#5536#2" expanded="true" />
+                    <element signature="e#12169#13088#0" expanded="false" />
+                    <element signature="e#13147#13854#0" expanded="false" />
+                    <element signature="e#13932#16813#0" expanded="false" />
+                    <element signature="e#18663#19917#0" expanded="false" />
+                    <element signature="e#18673#19159#0" expanded="false" />
+                    <element signature="e#19189#19915#0" expanded="false" />
+                    <element signature="e#20006#21597#0" expanded="false" />
+                    <element signature="e#21661#23866#0" expanded="false" />
+                    <element signature="e#23881#23937#0" expanded="false" />
+                    <element signature="e#24028#25680#0" expanded="false" />
+                    <element signature="e#25758#26352#0" expanded="false" />
+                    <element signature="e#26460#28172#0" expanded="false" />
+                    <element signature="e#28246#31575#0" expanded="false" />
+                    <element signature="e#31676#34572#0" expanded="false" />
+                    <element signature="e#34593#34902#0" expanded="false" />
+                    <element signature="e#35000#36820#0" expanded="false" />
+                    <element signature="e#36898#38309#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -128,8 +147,10 @@
           <file leaf-file-name="_foundation-global.scss" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/foundation/_foundation-global.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="170" column="17" selection-start="6003" selection-end="6003" vertical-scroll-proportion="0.73255813">
-                  <folding />
+                <state line="65" column="0" selection-start="2621" selection-end="2621" vertical-scroll-proportion="0.4267442">
+                  <folding>
+                    <element signature="e#3944#4198#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -168,8 +189,8 @@
         <option value="$PROJECT_DIR$/scss/foundation/components/_top-bar.scss" />
         <option value="$PROJECT_DIR$/scss/foundation/_foundation-global.scss" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/foundation.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -243,20 +264,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="zik-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zik" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zik-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -423,7 +430,11 @@
       <created>1365898728659</created>
       <updated>1365898728659</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=" 6. Video slider&#10; 7. Advertising(spam) mini&#10; &#10;Add img.">
+      <created>1365898774432</created>
+      <updated>1365898774432</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -512,7 +523,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 6. Video slider&#10; 7. Advertising(spam) mini&#10; &#10; Fix elements responsive." />
+    <option name="LAST_COMMIT_MESSAGE" value=" 6. Video slider&#10; 7. Advertising(spam) mini&#10; &#10;Add img." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -531,6 +542,7 @@
     <MESSAGE value="Репортаж блок + фік на респонсів. Вивід блоків для категоріїв." />
     <MESSAGE value="Img +" />
     <MESSAGE value=" 6. Video slider&#10; 7. Advertising(spam) mini&#10; &#10; Fix elements responsive." />
+    <MESSAGE value=" 6. Video slider&#10; 7. Advertising(spam) mini&#10; &#10;Add img." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -552,11 +564,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.11657143" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/robots.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.07771429" />
@@ -627,37 +634,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/foundation/_foundation-global.scss">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="17" selection-start="6003" selection-end="6003" vertical-scroll-proportion="0.73255813">
+        <state line="41" column="0" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/scss/foundation/_foundation-global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="482" column="60" selection-start="25127" selection-end="25127" vertical-scroll-proportion="-20.115385">
+        <state line="65" column="0" selection-start="2621" selection-end="2621" vertical-scroll-proportion="0.4267442">
           <folding>
-            <element signature="tag#div#8;tag#div#0;tag#section#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <marker date="1365898076453" expanded="true" signature="584:726" placeholder="..." />
-            <marker date="1365898076453" expanded="true" signature="677:714" placeholder="{...}" />
+            <element signature="e#3944#4198#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/foundation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1025" column="19" selection-start="27993" selection-end="27993" vertical-scroll-proportion="0.28742516">
+        <state line="85" column="33" selection-start="6271" selection-end="6271" vertical-scroll-proportion="-2.32">
           <folding>
             <element signature="e#3377#4040#2" expanded="true" />
-            <element signature="e#15726#16980#0" expanded="false" />
-            <element signature="e#15736#16222#0" expanded="false" />
-            <element signature="e#16252#16978#0" expanded="false" />
-            <element signature="e#17069#18660#0" expanded="false" />
-            <element signature="e#18724#20938#0" expanded="false" />
-            <element signature="e#21100#22454#0" expanded="false" />
-            <element signature="e#22532#23107#0" expanded="false" />
-            <element signature="e#28373#30315#0" expanded="false" />
+            <element signature="e#4873#5536#2" expanded="true" />
+            <element signature="e#12169#13088#0" expanded="false" />
+            <element signature="e#13147#13854#0" expanded="false" />
+            <element signature="e#13932#16813#0" expanded="false" />
+            <element signature="e#18663#19917#0" expanded="false" />
+            <element signature="e#18673#19159#0" expanded="false" />
+            <element signature="e#19189#19915#0" expanded="false" />
+            <element signature="e#20006#21597#0" expanded="false" />
+            <element signature="e#21661#23866#0" expanded="false" />
+            <element signature="e#23881#23937#0" expanded="false" />
+            <element signature="e#24028#25680#0" expanded="false" />
+            <element signature="e#25758#26352#0" expanded="false" />
+            <element signature="e#26460#28172#0" expanded="false" />
+            <element signature="e#28246#31575#0" expanded="false" />
+            <element signature="e#31676#34572#0" expanded="false" />
+            <element signature="e#34593#34902#0" expanded="false" />
+            <element signature="e#35000#36820#0" expanded="false" />
+            <element signature="e#36898#38309#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1132" column="44" selection-start="57971" selection-end="57971" vertical-scroll-proportion="0.5311751">
+          <folding>
+            <element signature="tag#div#1;tag#aside#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#aside#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#aside#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <marker date="1365985371664" expanded="true" signature="584:726" placeholder="..." />
+            <marker date="1365985371664" expanded="true" signature="677:714" placeholder="{...}" />
           </folding>
         </state>
       </provider>
