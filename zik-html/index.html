@@ -8,6 +8,10 @@
   <title>ZIK.UA</title>
   <link rel="stylesheet" href="css/fonts/stylesheet.css" />
   <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Sidebar menu responsive -->
+  <link rel="stylesheet" href="css/jquery.sidr.dark.css" />
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
   <script src="js/vendor/custom.modernizr.js"></script>
     <!--[if IE 8]>
         <link rel="stylesheet" href="css/ie8_grid.css" />
@@ -31,10 +35,55 @@
             </div>
             <div class="large-10 large-offset-2 columns">
                 <div class="sponsors">
-                    <span><img src="img/sponsor.png" alt="sponsor" /></span>
+                    <div class="sponsors_list">
+                        <a href="#"><img src="img/sponsor/ohljad.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/narodnyj_control.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/istorychna_pravds.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/lystracija.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/pravo_cacija.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/pohljad.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/pro_karpaty.png" alt="sponsor"/></a>
+                    </div>
                 </div>
                  <div class="other_project right">
                     <div class="link"><span class="left">інші проекти</span> <i></i></div>
+                     <div class="other_project_list_links">
+                        <div class="row">
+                            <div class="large-4 columns">
+                                <ul>
+                                    <li><a href="#">Вільний мікрофон</a></li>
+                                    <li><a href="#">Здоров будь!</a></li>
+                                    <li><a href="#">Історична правда з Вахтангом Кіпіані</a></li>
+                                    <li><a href="#">Люстрація</a></li>
+                                </ul>
+                            </div>
+                            <div class="large-2 columns">
+                                <ul>
+                                    <li><a href="#">Народний контроль</a></li>
+                                    <li><a href="#">Огляд дня</a></li>
+                                    <li><a href="#">Погляд на тиждень</a></li>
+                                    <li><a href="#">ПРАВОкація</a></li>
+                                </ul>
+                            </div>
+                            <div class="large-2 columns">
+                                <ul>
+                                    <li><a href="#">Прямим текстом</a></li>
+                                    <li><a href="#">Перевірка на вечірку</a></li>
+                                    <li><a href="#">Погода</a></li>
+                                    <li><a href="#">Про Карпати</a></li>
+                                </ul>
+                            </div>
+                            <div class="large-4 columns">
+                                <ul class="last">
+                                    <li><a href="#">Твоє бачення</a></li>
+                                    <li><a href="#">Чвертка з паном Марциняком</a></li>
+                                    <li><a href="#">101. Служба порятунку</a></li>
+                                    <li><a href="#">Інші проекти</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="triangle"></div>
+                     </div>
                  </div>
             </div>
         </div>
@@ -92,24 +141,26 @@
                             <!-- Title Area -->
                             <li class="name"></li>
                             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                            <li class="toggle-topbar menu-icon"><a href="#"><span>Меню&nbsp;</span></a></li>
+                            <li class="toggle-topbar menu-icon"><a href="#" id="responsive-menu-button"><span>Меню&nbsp;</span></a></li>
                         </ul>
-                        <section class="top-bar-section">
-                            <!-- Right Nav Section -->
-                            <ul class="right">
-                                <li><a href="#">Новини</a></li>
-                                <li class="active"><a href="#">Західна Україна</a></li>
-                                <li><a href="#">Влада</a></li>
-                                <li><a href="#">Економіка</a></li>
-                                <li><a href="#">Кримінал</a></li>
-                                <li><a href="#">Спорт</a></li>
-                                <li><a href="#">Людина</a></li>
-                                <li><a href="#">Світ</a></li>
-                                <li><a href="#">Аналітика</a></li>
-                                <li><a href="#">Фото</a></li>
-                                <li><a href="#">Відео</a></li>
-                            </ul>
-                        </section>
+                            <section class="top-bar-section">
+                                <!-- Right Nav Section -->
+                                <div id="navigation">
+                                    <ul class="right">
+                                        <li><a href="#">Новини</a></li>
+                                        <li class="active"><a href="#">Західна Україна</a></li>
+                                        <li><a href="#">Влада</a></li>
+                                        <li><a href="#">Економіка</a></li>
+                                        <li><a href="#">Кримінал</a></li>
+                                        <li><a href="#">Спорт</a></li>
+                                        <li><a href="#">Людина</a></li>
+                                        <li><a href="#">Світ</a></li>
+                                        <li><a href="#">Аналітика</a></li>
+                                        <li><a href="#">Фото</a></li>
+                                        <li><a href="#">Відео</a></li>
+                                    </ul>
+                                </div>
+                            </section>
                     </nav>
                 </div>
             </div>
@@ -156,7 +207,7 @@
     <div class="row">
         <!-- Main Blog Content -->
         <section>
-            <div class="large-8 columns" role="content">
+            <div class="large-8 columns colum_6_media" role="content">
                 <div class="wrap_promo_slider">
                     <div class="foto_">
                         <img src="img/slider_img.jpg" alt="slider" />
@@ -361,14 +412,13 @@
                         </div>
                     </div>
                 </div>
-
-
             <!-- Video slider -->
                 <div class="box_more-category wrap_video_slider">
                     <div class="seperato_line"></div>
                     <article>
                         <header>
                             <h5>Відео</h5>
+
                             <ul class="right">
                                 <li class="active"><a href="#"><span>останні</span></a></li>
                                 <li><a href="#"><span>популярні</span></a></li>
@@ -649,7 +699,7 @@
                     </div>
                     <div class="more-information">
                         <div class="link">
-                            <span class="left">A-95</span><i></i>
+                            <span class="left" >A-95</span><i></i>
                             <div class="select_list_links">
                                 <ul>
                                     <li><a>A92</a></li>
@@ -658,6 +708,7 @@
                                 </ul>
                             </div>
                         </div>
+
                         <div class="more_info-text fuel_rate"><span>798.80</span> <i class="up"></i></div>
                     </div>
                 </div>
@@ -668,7 +719,7 @@
         <!-- End Main Content -->
 
         <!-- Sidebar -->
-        <aside class="large-4 columns">
+        <aside class="large-4 columns colum_6_media">
 
             <div class="all_news">
                 <div class="list_typ_news">
@@ -858,7 +909,7 @@
                     <div class="refresh">
                         <div class="link_refresh">
                             <i class="refresh_icon left"></i>
-                            <span class="right">15:50 <i class="triangle"></i></span>
+                            <span style="padding-left: 5px;">15:50 <i class="triangle"></i></span>
                             <div class="clearfix"></div>
                         </div>
                     </div>
@@ -1119,20 +1170,18 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="large-4 columns">
-                <p class="white">© 2004-2012 Західна інформаційна корпорація</p>
+        <div class="large-4 columns">
+            <p class="white">© 2004-2012 Західна інформаційна корпорація</p>
 
-                <p>За зміст рекламної інформації відповідальність несе рекламодавець.</p>
-            </div>
+            <p>За зміст рекламної інформації відповідальність несе рекламодавець.</p>
+        </div>
+        <div class="large-8 columns">
             <div class="large-8 columns">
-                <div class="large-8 columns">
-                    <p>Інформація «ЗІКу» є інтелектуальною власністю ТОВ «Західна інформаційна корпорація». За повного чи часткового використання текстів та зображень чи за будь-якого іншого поширення інформації «ЗІКу» гіперпосилання на сайт «Західної інформаційної корпорації» – www.zik.ua – є обов'язковим.</p>
-                </div>
-                <div class="large-3 columns">
-                    <div class="count_site">
-                        <img src="img/bigmir.jpg" alt="bigmir" />
-                    </div>
+                <p>Інформація «ЗІКу» є інтелектуальною власністю ТОВ «Західна інформаційна корпорація». За повного чи часткового використання текстів та зображень чи за будь-якого іншого поширення інформації «ЗІКу» гіперпосилання на сайт «Західної інформаційної корпорації» – www.zik.ua – є обов'язковим.</p>
+            </div>
+            <div class="large-3 columns">
+                <div class="count_site">
+                    <img src="img/bigmir.jpg" alt="bigmir" />
                 </div>
             </div>
         </div>
@@ -1143,10 +1192,20 @@
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
   '.js><\/script>')
   </script>
-  
-  <script src="js/foundation.min.js"></script>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/jquery.sidr.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
   <script>
     $(document).foundation();
+    $('#responsive-menu-button').sidr({
+        name: 'sidr-main',
+        source: '#navigation'
+    });
+    $(".wrap_list_news ul").mCustomScrollbar();
   </script>
 
 </body>

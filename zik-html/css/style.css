@@ -2300,49 +2300,35 @@ form.custom {
         display: block;
         padding: 0 13.33333px; }
   .top-bar .toggle-topbar {
-    position: absolute;
-    right: 0;
-    top: 0; }
+    margin-top: -40px; }
     .top-bar .toggle-topbar a {
+      font-family: pf_dindisplay_promedium;
       color: #3a3c43;
       text-transform: uppercase;
-      font-size: 0.875em;
-      font-weight: bold;
+      font-size: 13px;
       position: relative;
       display: block;
       padding: 0 13.33333px;
       height: 40px;
       line-height: 40px; }
-    .top-bar .toggle-topbar.menu-icon {
-      right: 13.33333px;
-      top: 50%;
-      margin-top: -16px;
-      padding-left: 40px; }
-      .top-bar .toggle-topbar.menu-icon a {
-        text-indent: -48px;
-        width: 34px;
-        height: 34px;
-        line-height: 33px;
-        padding: 0;
-        color: #3a3c43; }
-        .top-bar .toggle-topbar.menu-icon a span {
-          position: absolute;
-          right: 0;
-          display: block;
-          width: 16px;
-          height: 0;
-          -webkit-box-shadow: 0 10px 0 1px #3a3c43, 0 16px 0 1px #3a3c43, 0 22px 0 1px #3a3c43;
-          box-shadow: 0 10px 0 1px #3a3c43, 0 16px 0 1px #3a3c43, 0 22px 0 1px #3a3c43; }
+    .top-bar .toggle-topbar.menu-icon a {
+      width: 87px;
+      border-left: 1px solid #e8e8e4;
+      border-right: 1px solid #e8e8e4;
+      height: 40px;
+      line-height: 40px;
+      padding: 0;
+      color: #3a3c43; }
+      .top-bar .toggle-topbar.menu-icon a span {
+        padding-bottom: 2px;
+        padding-left: 26px;
+        margin-left: 11px;
+        background: url("../img/menu_responsive_icon.jpg") left 4px no-repeat; }
   .top-bar.expanded {
     height: auto;
     background: transparent; }
-    .top-bar.expanded .title-area {
-      background: #f3f3ef; }
     .top-bar.expanded .toggle-topbar a {
       color: #267a9f; }
-      .top-bar.expanded .toggle-topbar a span {
-        -webkit-box-shadow: 0 10px 0 1px #267a9f, 0 16px 0 1px #267a9f, 0 22px 0 1px #267a9f;
-        box-shadow: 0 10px 0 1px #267a9f, 0 16px 0 1px #267a9f, 0 22px 0 1px #267a9f; }
 
 .top-bar-section {
   left: 0;
@@ -2447,7 +2433,7 @@ form.custom {
 .js-generated {
   display: block; }
 
-@media only screen and (min-width: 58.75em) {
+@media only screen and (min-width: 810px) {
   .top-bar {
     background: #f3f3ef;
     *zoom: 1;
@@ -3805,6 +3791,9 @@ header {
 .dark-gray-line {
   background: url("../img/dark-gray-line.jpg") center top no-repeat #3b3d44;
   padding: 20px 0 0 0; }
+  @media only screen and (max-width: 767px) {
+    .dark-gray-line {
+      padding: 20px 0 0 100px; } }
 
 .light-gray-line {
   background-color: #f3f3ef; }
@@ -3847,22 +3836,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     z-index: 2; }
     .logo a img {
       max-width: 102%; }
-    @media only screen and (max-width: 905px) {
+    @media only screen and (max-width: 930px) {
       .logo a img {
-        max-width: 92%; } }
-    @media only screen and (max-width: 48em) {
-      .logo a img {
-        margin-left: 5px;
-        max-width: 26%; } }
+        max-width: 76%; } }
+
+/*************
+  Meida colum
+*************/
+@media only screen and (max-width: 955px) {
+  .colum_6_media {
+    width: 50% !important; } }
+@media only screen and (max-width: 600px) {
+  .colum_6_media {
+    width: 100% !important; } }
+
+/*******************
+  Menu top sidebar
+*******************/
+@media only screen and (max-width: 809px) {
+  #navigation {
+    display: none; } }
 
 /**************
   Sponsors
 ***************/
 .sponsors {
-  display: inline-block; }
-  @media only screen and (max-width: 905px) {
-    .sponsors span {
-      display: none; } }
+  display: inline-block;
+  overflow: hidden;
+  width: 85%; }
+  @media only screen and (max-width: 540px) {
+    .sponsors {
+      width: 75%; } }
+  .sponsors .sponsors_list {
+    width: 200%; }
+  .sponsors a {
+    margin-right: 10px;
+    vertical-align: top; }
 
 /**************
   Other project
@@ -3870,8 +3879,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
 .other_project .link {
   font-size: 0.6875em;
   color: #999999;
-  position: relative;
-  margin-top: 0px; }
+  margin-top: 0px;
+  position: relative; }
   @media only screen and (min-width: 48em) {
     .other_project .link {
       margin-top: 10px; } }
@@ -3888,6 +3897,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     float: right;
     margin-top: 0.375em;
     margin-left: 0.3125em; }
+.other_project .other_project_list_links {
+  position: absolute;
+  z-index: 2;
+  background: #2b2d31;
+  width: 100%;
+  left: 0;
+  top: 44px;
+  padding: 15px 20px 16px;
+  display: none; }
+  .other_project .other_project_list_links ul {
+    background: url("../img/border_1px_silver.jpg") right top repeat-y;
+    margin: 0;
+    padding: 0; }
+  .other_project .other_project_list_links ul.last {
+    background: none; }
+  .other_project .other_project_list_links ul li {
+    list-style: none;
+    padding: 0;
+    line-height: 17px; }
+  .other_project .other_project_list_links a {
+    font-size: 11px;
+    color: #a9a9a9;
+    text-shadow: 0 -1px 1px #000000; }
+    .other_project .other_project_list_links a:hover {
+      color: #ffffff; }
+  .other_project .other_project_list_links .triangle {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 12px;
+    border-color: transparent transparent #2a2c30 transparent;
+    position: absolute;
+    top: -24px;
+    right: 30px; }
+.other_project:hover .other_project_list_links {
+  display: block; }
 
 /***************
   Change region
@@ -3922,7 +3968,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
       font-size: 0.6875em; }
     .list_links-top ul a:hover {
       color: #ffffff; }
-  @media only screen and (max-width: 784px) {
+  @media only screen and (max-width: 976px) {
     .list_links-top {
       display: none; } }
 
@@ -4018,9 +4064,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     margin: 0.6875em 0.1875em 0 0.8125em; }
   .btn_on_air:hover {
     color: #d3d3d3; }
-  @media only screen and (max-width: 976px) {
-    .btn_on_air {
-      display: none; } }
 
 /***********
   Banner top
@@ -4186,6 +4229,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
   .all_news .wrap_list_news {
     background: #f5f5f5;
     padding: 0.4375em 0.75em 0 1.0625em; }
+    .all_news .wrap_list_news ul {
+      height: 1215px;
+      overflow: auto; }
     .all_news .wrap_list_news li {
       list-style: none;
       padding: 12px 0;
@@ -4242,10 +4288,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
         height: 0;
         border: solid 3px;
         border-color: #34658b transparent transparent transparent;
-        display: block;
         float: right;
-        margin-top: 0.375em;
-        margin-left: 0.5em; }
+        margin-top: 3px;
+        /*          margin-left: 0.413em;*/ }
       .all_news .refresh .link_refresh i.refresh_icon {
         background: url("../img/refresh_icon.png") left top no-repeat;
         width: 9px;
@@ -4697,7 +4742,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
       display: none; } }
 
 /****************
- 6. Video slider
+ 7. Video slider
 *****************/
 .wrap_video_slider {
   margin-bottom: 25px;
@@ -4862,7 +4907,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
       display: none; } }
 
 /*************************
- 7. Advertising(spam) mini
+ 8. Advertising(spam) mini
 **************************/
 .advertising-min {
   *zoom: 1;
@@ -4999,7 +5044,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
       margin-left: 5px; }
     .advertising-min .more_info-text.fuel_rate i.down {
       background-position: -6px 0; }
-  @media only screen and (max-width: 978px) {
+  @media only screen and (max-width: 768px) {
     .advertising-min {
       display: none; } }
 
@@ -5019,7 +5064,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     height: auto; }
 
 /**********************
-  8. box-news do not miss
+  9. box-news do not miss
 ***********************/
 .box-news_do_not_miss {
   background: #f5f5f5;
@@ -5109,7 +5154,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
         width: 52.436%; } }
 
 /*******************
-  9.  Box news blog
+  10.  Box news blog
 *******************/
 .box-list_blog {
   background: #f5f5f5;
@@ -5179,7 +5224,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
         width: 75.436%; } }
 
 /**********************
- 10. Box announcements
+ 11. Box announcements
 **********************/
 .box-announcements {
   background: #f5f5f5;
@@ -5271,7 +5316,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
         width: 73.436%; } }
 
 /*******************
- 11. box list links
+ 12. box list links
 ********************/
 .box-list_links {
   /* Links */ }

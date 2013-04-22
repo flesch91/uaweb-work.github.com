@@ -104,6 +104,7 @@ header{margin-bottom: emCalc(16px)}
     background-color: #000000;
     position: relative;
     padding: 7px 0;
+
   }
   .shadow_black_line{
     background: url("../img/shadow_black_line.png") center top no-repeat;
@@ -116,6 +117,8 @@ header{margin-bottom: emCalc(16px)}
 .dark-gray-line{
   background: url("../img/dark-gray-line.jpg") center top no-repeat #3b3d44;
   padding: 20px 0 0 0;
+
+  @media only screen and (max-width: 767px){padding: 20px 0 0 100px;}
 }
 .light-gray-line{background-color: #f3f3ef}
 
@@ -140,24 +143,39 @@ header{margin-bottom: emCalc(16px)}
     z-index: 2;
     img{max-width: 102%}
     //905px
-    @media only screen and (max-width: 905px){ img{max-width: 92%}}
-    //768px
-    @media only screen and (max-width: $small-screen){
-      img{
-        margin-left: 5px;
-        max-width: 26%;
-      }
-    }
+    @media only screen and (max-width: 930px){ img{max-width: 76%}}
   }
 }
+/*************
+  Meida colum
+*************/
+.colum_6_media{
+  @media only screen and (max-width: 955px){width: 50% !important;}
+
+  @media only screen and (max-width: 600px){width: 100% !important;}
+}
+/*******************
+  Menu top sidebar
+*******************/
+#navigation{
+  @media only screen and (max-width: 809px){display: none}
+
+}
+
 /**************
   Sponsors
 ***************/
 .sponsors{
   display: inline-block;
-  span{
-    //@extend .hide-for-small;
-    @media only screen and (max-width: 905px){display: none}
+  overflow: hidden;
+  width: 85%;
+  @media only screen and (max-width: 540px){width: 75%;}
+  .sponsors_list{
+    width: 200%;
+  }
+  a{
+    margin-right: 10px;
+    vertical-align: top;
   }
 }
 
@@ -168,8 +186,8 @@ header{margin-bottom: emCalc(16px)}
   .link{
     font-size: emCalc(11px);
     color: #999999;
-    position: relative;
     margin-top: 0px;
+    position: relative;
     @media #{$small} { margin-top: 10px; }
     span{border-bottom: 1px dotted #666666;}
     i{
@@ -178,6 +196,43 @@ header{margin-bottom: emCalc(16px)}
       float: right;
       margin-top: emCalc(6px);
       margin-left: emCalc(5px);
+    }
+  }
+  .other_project_list_links{
+    position: absolute;
+    z-index: 2;
+    background: #2b2d31;
+    width: 100%;
+    left: 0;
+    top: 44px;
+    padding: 15px 20px 16px;
+    display: none;
+
+    ul{
+      background: url("../img/border_1px_silver.jpg") right top repeat-y;
+      margin: 0;
+      padding: 0;
+    }
+    ul.last{background: none}
+    ul li{list-style: none; padding: 0; line-height: 17px;}
+
+    a{
+      font-size: 11px;
+      color: #a9a9a9;
+      text-shadow: 0 -1px 1px #000000;
+
+      &:hover{color: #ffffff;}
+    }
+    .triangle{
+      @include  css-triangle(12px, #2a2c30, bottom);
+      position: absolute;
+      top: -24px;
+      right: 30px;
+    }
+  }
+  &:hover{
+    .other_project_list_links{
+      display: block;
     }
   }
 }
@@ -221,7 +276,8 @@ header{margin-bottom: emCalc(16px)}
     }
     a:hover{color: #ffffff}
   }
-  @media only screen and (max-width: 784px){display: none}
+  @media only screen and (max-width: 976px){display: none}
+
 }
 /***************
   Change language
@@ -283,7 +339,6 @@ header{margin-bottom: emCalc(16px)}
     &:hover{
       color: #d3d3d3;
     }
-  @media only screen and (max-width: 976px){display: none}
 }
 
 /***********
@@ -434,6 +489,7 @@ header{margin-bottom: emCalc(16px)}
   .wrap_list_news{
     background: #f5f5f5;
     padding: emCalc(7px) emCalc(12px) 0 emCalc(17px);
+    ul{height: 1215px; overflow: auto}
     li{
       list-style: none;
       padding: 12px 0;
@@ -486,10 +542,9 @@ header{margin-bottom: emCalc(16px)}
 
       i.triangle{
           @include css-triangle(3px, #34658b, top);
-          display: block;
           float: right;
-          margin-top: emCalc(6px);
-          margin-left: emCalc(8px);
+        margin-top: 3px;
+/*          margin-left: 0.413em;*/
       }
       i.refresh_icon{
         background: url("../img/refresh_icon.png") left top no-repeat;
@@ -579,12 +634,13 @@ header{margin-bottom: emCalc(16px)}
 //3 - Now channel
 //4 - Box more category
 //5 - Box news list
-//6 - Video slider
-//7 - Advertising(spam) mini
-//8 - box-news do not miss
-//9 -  Box news blog
-//10 - Box announcements
-//11 - box list links
+//6 - foto post (reportash) news
+//7 - Video slider
+//8 - Advertising(spam) mini
+//9 - box-news do not miss
+//10 - Box news blog
+//11 - Box announcements
+//12 - box list links
 
 /*******************
   1. Top video blok
@@ -966,7 +1022,7 @@ header{margin-bottom: emCalc(16px)}
 }
 
 /****************
- 6. Video slider
+ 7. Video slider
 *****************/
 .wrap_video_slider{
   margin-bottom: 25px;
@@ -1112,7 +1168,7 @@ header{margin-bottom: emCalc(16px)}
 
 
 /*************************
- 7. Advertising(spam) mini
+ 8. Advertising(spam) mini
 **************************/
 .advertising-min{
   @include clearfix();
@@ -1237,7 +1293,7 @@ header{margin-bottom: emCalc(16px)}
       }
     }
   }
-  @media only screen and (max-width: 978px){display: none}
+  @media only screen and (max-width: 768px){display: none}
 }
 .advertising_sidebar{
   margin-bottom: 30px;
@@ -1259,7 +1315,7 @@ header{margin-bottom: emCalc(16px)}
 }
 
 /**********************
-  8. box-news do not miss
+  9. box-news do not miss
 ***********************/
 .box-news_do_not_miss{
   background: #f5f5f5;
@@ -1341,7 +1397,7 @@ header{margin-bottom: emCalc(16px)}
 }
 
 /*******************
-  9.  Box news blog
+  10.  Box news blog
 *******************/
 .box-list_blog{
   background: #f5f5f5;
@@ -1408,7 +1464,7 @@ header{margin-bottom: emCalc(16px)}
 }
 
 /**********************
- 10. Box announcements
+ 11. Box announcements
 **********************/
 .box-announcements{
   background: #f5f5f5;
@@ -1481,7 +1537,7 @@ header{margin-bottom: emCalc(16px)}
   }
 }
 /*******************
- 11. box list links
+ 12. box list links
 ********************/
 .box-list_links{
   header{border-bottom: 1px solid #4c4b4b; margin-bottom: 10px}

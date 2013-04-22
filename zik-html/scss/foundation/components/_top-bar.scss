@@ -36,14 +36,14 @@ $topbar-menu-link-transform: uppercase !default;
 $topbar-menu-link-font-size: emCalc(14px) !default;
 $topbar-menu-link-weight: bold !default;
 $topbar-menu-link-color: #3a3c43 !default;
-$topbar-menu-icon-color: #3a3c43 !default;
+$topbar-menu-icon-color: #999999 !default;
 $topbar-menu-link-color-toggled: #267A9F !default;
 $topbar-menu-icon-color-toggled: #267A9F !default;
 
 // Transitions and breakpoint styles
 $topbar-transition-speed: 300ms !default;
 $topbar-breakpoint: emCalc(940px) !default; // Change to 9999px for always mobile layout
-$topbar-media-query: "only screen and (min-width:"#{$topbar-breakpoint}")" !default;
+$topbar-media-query: "only screen and (min-width:"#{810px}")" !default;
 
 
 /* Wrapped around .top-bar to contain to grid width */
@@ -108,15 +108,12 @@ $topbar-media-query: "only screen and (min-width:"#{$topbar-breakpoint}")" !defa
 
   // Menu toggle button on small devices
   .toggle-topbar {
-    position: absolute;
-    #{$default-opposite}: 0;
-    top: 0;
-
+    margin-top: -40px;
     a {
+      font-family: pf_dindisplay_promedium;
       color: $topbar-link-color;
       text-transform: $topbar-menu-link-transform;
-      font-size: $topbar-menu-link-font-size;
-      font-weight: $topbar-menu-link-weight;
+      font-size: 13px;
       position: relative;
       display: block;
       padding: 0 $topbar-height / 3;
@@ -126,33 +123,20 @@ $topbar-media-query: "only screen and (min-width:"#{$topbar-breakpoint}")" !defa
 
     // Adding the class "menu-icon" will add the 3-line icon people love and adore.
     &.menu-icon {
-      #{$default-opposite}: $topbar-height / 3;
-      top: 50%;
-      margin-top: -16px;
-      padding-#{$default-float}: 40px;
-
       a {
-        text-indent: -48px;
-        width: 34px;
-        height: 34px;
-        line-height: 33px;
+        width: 87px;
+        border-left: 1px solid #e8e8e4;
+        border-right: 1px solid #e8e8e4;
+        height: 40px;
+        line-height: 40px;
         padding: 0;
         color: $topbar-menu-link-color;
 
         span {
-          position: absolute;
-          #{$default-opposite}: 0;
-          display: block;
-          width: 16px;
-          height: 0;
-          // Shh, don't tell, but box-shadows create the menu icon :)
-          -webkit-box-shadow: 0 10px 0 1px $topbar-menu-icon-color,
-                              0 16px 0 1px $topbar-menu-icon-color,
-                              0 22px 0 1px $topbar-menu-icon-color;
-
-          box-shadow:         0 10px 0 1px $topbar-menu-icon-color,
-                              0 16px 0 1px $topbar-menu-icon-color,
-                              0 22px 0 1px $topbar-menu-icon-color;
+          padding-bottom: 2px;
+          padding-left: 26px;
+          margin-left: 11px;
+          background: url("../img/menu_responsive_icon.jpg") left 4px no-repeat;
         }
       }
     }
@@ -162,20 +146,9 @@ $topbar-media-query: "only screen and (min-width:"#{$topbar-breakpoint}")" !defa
   &.expanded {
     height: auto;
     background: transparent;
-
-    .title-area { background: $topbar-bg; }
-
     .toggle-topbar {
       a { color: $topbar-menu-link-color-toggled;
         span {
-          // Shh, don't tell, but box-shadows create the menu icon :)
-          -webkit-box-shadow: 0 10px 0 1px $topbar-menu-icon-color-toggled,
-                              0 16px 0 1px $topbar-menu-icon-color-toggled,
-                              0 22px 0 1px $topbar-menu-icon-color-toggled;
-
-          box-shadow:         0 10px 0 1px $topbar-menu-icon-color-toggled,
-                              0 16px 0 1px $topbar-menu-icon-color-toggled,
-                              0 22px 0 1px $topbar-menu-icon-color-toggled;
         }
       }
     }
