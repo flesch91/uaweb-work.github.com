@@ -2263,7 +2263,6 @@ form.custom {
   z-index: 99; }
 
 .top-bar {
-  overflow: hidden;
   height: 40px;
   line-height: 40px;
   position: relative;
@@ -2300,7 +2299,7 @@ form.custom {
         display: block;
         padding: 0 13.33333px; }
   .top-bar .toggle-topbar {
-    margin-top: -40px; }
+    margin-top: -39px; }
     .top-bar .toggle-topbar a {
       font-family: pf_dindisplay_promedium;
       color: #3a3c43;
@@ -2324,11 +2323,8 @@ form.custom {
         padding-left: 26px;
         margin-left: 11px;
         background: url("../img/menu_responsive_icon.jpg") left 4px no-repeat; }
-  .top-bar.expanded {
-    height: auto;
-    background: transparent; }
-    .top-bar.expanded .toggle-topbar a {
-      color: #267a9f; }
+  .top-bar.expanded .toggle-topbar a {
+    color: #267a9f; }
 
 .top-bar-section {
   left: 0;
@@ -3793,7 +3789,10 @@ header {
   padding: 20px 0 0 0; }
   @media only screen and (max-width: 767px) {
     .dark-gray-line {
-      padding: 20px 0 0 100px; } }
+      padding: 20px 0 0 120px; } }
+  @media only screen and (max-width: 508px) {
+    .dark-gray-line {
+      padding: 20px 0 0 90px; } }
 
 .light-gray-line {
   background-color: #f3f3ef; }
@@ -3835,10 +3834,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     top: 0;
     z-index: 2; }
     .logo a img {
-      max-width: 102%; }
+      max-width: 100%; }
     @media only screen and (max-width: 930px) {
-      .logo a img {
-        max-width: 76%; } }
+      .logo a {
+        width: 98px; } }
+    @media only screen and (max-width: 508px) {
+      .logo a {
+        width: 88px; } }
 
 /*************
   Meida colum
@@ -3849,6 +3851,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
 @media only screen and (max-width: 600px) {
   .colum_6_media {
     width: 100% !important; } }
+
+@media only screen and (max-width: 955px) {
+  .tabs_fix_full {
+    width: 100% !important; } }
+
+/*****************
+  Media 460
+*****************/
+.media_460 {
+  display: none !important;
+  /* Social box */ }
+  @media only screen and (max-width: 767px) {
+    .media_460.social_wrap {
+      display: block !important;
+      margin-top: 6px; } }
+  @media only screen and (max-width: 606px) {
+    .media_460.social_wrap {
+      margin-right: 60px; } }
+  @media only screen and (max-width: 508px) {
+    .media_460.social_wrap {
+      margin-right: 40px; } }
+  @media only screen and (max-width: 459px) {
+    .media_460.social_wrap {
+      margin-right: 5px; } }
+  @media only screen and (max-width: 399px) {
+    .media_460.social_wrap {
+      display: none !important; } }
+
+/*****************
+  Media 320
+*****************/
+.media_320 {
+  display: none !important; }
+  @media only screen and (max-width: 459px) {
+    .media_320 {
+      display: block !important; } }
 
 /*******************
   Menu top sidebar
@@ -3864,14 +3902,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
   display: inline-block;
   overflow: hidden;
   width: 85%; }
-  @media only screen and (max-width: 540px) {
-    .sponsors {
-      width: 75%; } }
   .sponsors .sponsors_list {
-    width: 200%; }
+    width: 300%; }
   .sponsors a {
     margin-right: 10px;
     vertical-align: top; }
+  @media only screen and (max-width: 767px) {
+    .sponsors .sponsors_list {
+      padding-left: 101px; } }
+  @media only screen and (max-width: 540px) {
+    .sponsors {
+      width: 81%; } }
+  @media only screen and (max-width: 459px) {
+    .sponsors {
+      display: none; } }
 
 /**************
   Other project
@@ -3879,7 +3923,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
 .other_project .link {
   font-size: 0.6875em;
   color: #999999;
-  margin-top: 0px;
+  margin-top: 10px;
   position: relative; }
   @media only screen and (min-width: 48em) {
     .other_project .link {
@@ -3934,6 +3978,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     right: 30px; }
 .other_project:hover .other_project_list_links {
   display: block; }
+@media only screen and (max-width: 459px) {
+  .other_project {
+    display: none; } }
 
 /***************
   Change region
@@ -3948,6 +3995,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     margin-bottom: 0; }
   .change_region .current:before {
     content: "регіон: "; }
+  @media only screen and (max-width: 520px) {
+    .change_region {
+      margin-right: 0.325em; } }
 
 /***************
   List links top
@@ -3982,6 +4032,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
   margin-bottom: 1.25em; }
   .change_lang .custom {
     margin-bottom: 0; }
+  @media only screen and (max-width: 520px) {
+    .change_lang {
+      margin-right: 0.3em; } }
+  @media only screen and (max-width: 320px) {
+    .change_lang {
+      margin-right: 0;
+      float: right !important; } }
 
 /**********************
   Search form in header
@@ -3992,22 +4049,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
   .search_form .c_search_input {
     width: 131px;
     background: #ffffff;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
   .search_form .c_search_submit {
     background: url("../img/icon_search.png") center center no-repeat white;
     padding: 0 0.5em;
     width: 1.625em;
     height: 1.5625em; }
-  @media only screen and (max-width: 976px) {
+  @media only screen and (max-width: 678px) {
+    .search_form .c_search_input {
+      width: 60px; } }
+  @media only screen and (max-width: 606px) {
     .search_form {
-      margin-right: 0;
-      float: right !important; } }
-  @media only screen and (max-width: 784px) {
-    .search_form {
-      float: right !important; } }
-  @media only screen and (max-width: 320px) {
-    .search_form {
-      float: inherit !important; } }
+      display: none; } }
+
+#search_box {
+  display: none;
+  width: 42px;
+  float: right; }
+  #search_box i {
+    background: url("../img/search_icon.png") center center no-repeat;
+    width: 42px;
+    height: 40px;
+    display: block; }
+  @media only screen and (max-width: 606px) {
+    #search_box {
+      display: block; } }
 
 /**************
   On air button
@@ -4064,6 +4132,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     margin: 0.6875em 0.1875em 0 0.8125em; }
   .btn_on_air:hover {
     color: #d3d3d3; }
+  @media only screen and (max-width: 976px) {
+    .btn_on_air {
+      margin-right: 0;
+      float: right !important; } }
+  @media only screen and (max-width: 784px) {
+    .btn_on_air {
+      float: right !important; } }
+  @media only screen and (max-width: 459px) {
+    .btn_on_air {
+      display: none; } }
 
 /***********
   Banner top

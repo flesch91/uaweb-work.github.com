@@ -118,7 +118,8 @@ header{margin-bottom: emCalc(16px)}
   background: url("../img/dark-gray-line.jpg") center top no-repeat #3b3d44;
   padding: 20px 0 0 0;
 
-  @media only screen and (max-width: 767px){padding: 20px 0 0 100px;}
+  @media only screen and (max-width: 767px){padding: 20px 0 0 120px;}
+  @media only screen and (max-width: 508px){padding: 20px 0 0 90px;}
 }
 .light-gray-line{background-color: #f3f3ef}
 
@@ -141,9 +142,12 @@ header{margin-bottom: emCalc(16px)}
     position: absolute;
     top: 0;
     z-index: 2;
-    img{max-width: 102%}
+    img{max-width: 100%}
     //905px
-    @media only screen and (max-width: 930px){ img{max-width: 76%}}
+    @media only screen and (max-width: 930px){
+      width: 98px;
+    }
+    @media only screen and (max-width: 508px){width: 88px}
   }
 }
 /*************
@@ -151,9 +155,40 @@ header{margin-bottom: emCalc(16px)}
 *************/
 .colum_6_media{
   @media only screen and (max-width: 955px){width: 50% !important;}
-
   @media only screen and (max-width: 600px){width: 100% !important;}
 }
+.tabs_fix_full{
+  @media only screen and (max-width: 955px){width: 100% !important;}
+}
+/*****************
+  Media 460
+*****************/
+.media_460{
+  display: none !important;
+
+  /* Social box */
+  &.social_wrap{
+    @media only screen and (max-width: 767px){
+      display: block !important;
+      margin-top: 6px;
+    }
+    @media only screen and (max-width: 606px){margin-right: 60px;}
+    @media only screen and (max-width: 508px){margin-right: 40px;}
+    @media only screen and (max-width: 459px){margin-right: 5px;}
+    @media only screen and (max-width: 399px){display: none !important;}
+
+  }
+}
+
+/*****************
+  Media 320
+*****************/
+.media_320{
+  display: none !important;
+
+  @media only screen and (max-width: 459px){display: block !important;}
+}
+
 /*******************
   Menu top sidebar
 *******************/
@@ -169,14 +204,16 @@ header{margin-bottom: emCalc(16px)}
   display: inline-block;
   overflow: hidden;
   width: 85%;
-  @media only screen and (max-width: 540px){width: 75%;}
   .sponsors_list{
-    width: 200%;
+    width: 300%;
   }
   a{
     margin-right: 10px;
     vertical-align: top;
   }
+  @media only screen and (max-width: 767px){.sponsors_list{padding-left: 101px;}}
+  @media only screen and (max-width: 540px){width: 81%;}
+  @media only screen and (max-width: 459px){display: none}
 }
 
 /**************
@@ -186,7 +223,7 @@ header{margin-bottom: emCalc(16px)}
   .link{
     font-size: emCalc(11px);
     color: #999999;
-    margin-top: 0px;
+    margin-top: 10px;
     position: relative;
     @media #{$small} { margin-top: 10px; }
     span{border-bottom: 1px dotted #666666;}
@@ -235,6 +272,7 @@ header{margin-bottom: emCalc(16px)}
       display: block;
     }
   }
+  @media only screen and (max-width: 459px){display: none}
 }
 
 /***************
@@ -252,6 +290,7 @@ header{margin-bottom: emCalc(16px)}
   .current:before{
     content: "регіон: ";
   }
+  @media only screen and (max-width: 520px){margin-right: 0.325em;}
 }
 /***************
   List links top
@@ -290,6 +329,8 @@ header{margin-bottom: emCalc(16px)}
   .custom {
     margin-bottom: 0;
   }
+  @media only screen and (max-width: 520px){margin-right: 0.3em;}
+  @media only screen and (max-width: 320px){margin-right: 0; float: right !important;}
 }
 /**********************
   Search form in header
@@ -301,6 +342,7 @@ header{margin-bottom: emCalc(16px)}
     width: 131px;
     background: #ffffff;
     margin-bottom: 0;
+    @include radius(0);
   }
   .c_search_submit{
     background: url("../img/icon_search.png") center center no-repeat #ffffff;
@@ -308,11 +350,27 @@ header{margin-bottom: emCalc(16px)}
     width: emCalc(26px);
     height: emCalc(25px);
   }
-  @media only screen and (max-width: 976px){margin-right: 0; float: right !important;}
-  @media only screen and (max-width: 784px){float: right !important;}
-  @media only screen and (max-width: 320px){float: inherit !important;}
-}
 
+  @media only screen and (max-width: 678px){
+    .c_search_input{width: 60px}
+  }
+  @media only screen and (max-width: 606px){
+    display: none;
+  }
+}
+// Media show box for search
+#search_box{
+    display: none;
+    width: 42px;
+    float: right;
+  i{
+    background: url("../img/search_icon.png") center center no-repeat;
+    width: 42px;
+    height: 40px;
+    display: block;
+  }
+  @media only screen and (max-width: 606px){display: block}
+}
 /**************
   On air button
 ***************/
@@ -339,6 +397,9 @@ header{margin-bottom: emCalc(16px)}
     &:hover{
       color: #d3d3d3;
     }
+  @media only screen and (max-width: 976px){margin-right: 0; float: right !important;}
+  @media only screen and (max-width: 784px){float: right !important;}
+  @media only screen and (max-width: 459px){display: none}
 }
 
 /***********

@@ -62,7 +62,6 @@ $topbar-media-query: "only screen and (min-width:"#{810px}")" !default;
 }
 
 .top-bar {
-  overflow: hidden;
   height: $topbar-height;
   line-height: $topbar-height;
   position: relative;
@@ -108,7 +107,7 @@ $topbar-media-query: "only screen and (min-width:"#{810px}")" !default;
 
   // Menu toggle button on small devices
   .toggle-topbar {
-    margin-top: -40px;
+    margin-top: -39px;
     a {
       font-family: pf_dindisplay_promedium;
       color: $topbar-link-color;
@@ -144,8 +143,6 @@ $topbar-media-query: "only screen and (min-width:"#{810px}")" !default;
 
   // Change things up when the top-bar is expanded
   &.expanded {
-    height: auto;
-    background: transparent;
     .toggle-topbar {
       a { color: $topbar-menu-link-color-toggled;
         span {
