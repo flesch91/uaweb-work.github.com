@@ -1373,6 +1373,7 @@ header{margin-bottom: emCalc(16px)}
     overflow: hidden;
     height: auto;
   }
+  @media only screen and (max-width: 768px){display: none}
 }
 
 /**********************

@@ -5140,6 +5140,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     width: 100%;
     overflow: hidden;
     height: auto; }
+  @media only screen and (max-width: 768px) {
+    .advertising_sidebar {
+      display: none; } }
 
 /**********************
   9. box-news do not miss
