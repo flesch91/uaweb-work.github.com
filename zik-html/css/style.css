@@ -3852,6 +3852,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
   .colum_6_media {
     width: 100% !important; } }
 
+@media only screen and (max-width: 954px) {
+  .colum_8_media {
+    width: 100% !important; } }
+
 @media only screen and (max-width: 955px) {
   .tabs_fix_full {
     width: 100% !important; } }
@@ -4022,21 +4026,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     .list_links-top {
       display: none; } }
 
-/***************
-  Change language
-****************/
-.change_lang {
+/*****************************
+  Change language and project
+*****************************/
+.change_lang,
+.change_project {
   min-width: 51px;
   margin-right: 1em;
   display: inline-block;
   margin-bottom: 1.25em; }
-  .change_lang .custom {
+  .change_lang .custom,
+  .change_project .custom {
     margin-bottom: 0; }
   @media only screen and (max-width: 520px) {
-    .change_lang {
+    .change_lang,
+    .change_project {
       margin-right: 0.3em; } }
   @media only screen and (max-width: 320px) {
-    .change_lang {
+    .change_lang,
+    .change_project {
       margin-right: 0;
       float: right !important; } }
 
@@ -4050,6 +4058,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     width: 131px;
     background: #ffffff;
     margin-bottom: 0;
+    font-size: 0.67em;
     -webkit-border-radius: 0;
     border-radius: 0; }
   .search_form .c_search_submit {
@@ -4201,7 +4210,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     margin-right: 1.25em; }
   .fast_news_slide .text_news_title {
     float: left;
-    margin-top: -0.0625em; }
+    margin-top: -0.0625em;
+    width: 80%; }
     .fast_news_slide .text_news_title a {
       font-size: 0.75em;
       color: #656565;
@@ -4297,16 +4307,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
           position: absolute;
           left: 3px;
           top: 6px; }
-        @media only screen and (max-width: 870px) {
-          .all_news .list_typ_news ul li.add_news {
-            display: none; } }
       .all_news .list_typ_news ul li.add_news:before {
         content: url("../img/css_triangle_black.png");
         position: absolute;
         left: -7px; }
   .all_news .wrap_list_news {
     background: #f5f5f5;
-    padding: 0.4375em 0.75em 0 1.0625em; }
+    padding: 0.4375em 0.75em 0 1.0625em;
+    /* Media 600px change height wraper list */ }
     .all_news .wrap_list_news ul {
       height: 1215px;
       overflow: auto; }
@@ -4351,6 +4359,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
           transition: color 0.1s ease-out; }
         .all_news .wrap_list_news li .title_new:hover a {
           color: #006e97; }
+    @media only screen and (max-width: 600px) {
+      .all_news .wrap_list_news ul {
+        height: 625px; } }
   .all_news .refresh {
     width: 52px;
     margin: 0 auto 17px auto; }
@@ -4436,10 +4447,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
           position: inherit !important;
           bottom: inherit;
           margin: 0 0 17px 30px; } }
-  @media only screen and (max-width: 978px) {
+  @media only screen and (max-width: 955px) {
     .wrap_promo_slider .foto_, .wrap_promo_slider .short_text {
       width: 100%;
       height: auto; } }
+  @media only screen and (max-width: 600px) {
+    .wrap_promo_slider .foto_ {
+      width: 50%; }
+    .wrap_promo_slider .short_text {
+      width: 50% !important;
+      height: 190px; }
+      .wrap_promo_slider .short_text p {
+        display: none; }
+      .wrap_promo_slider .short_text h3 {
+        font-size: 1em; }
+    .wrap_promo_slider .control_slider {
+      position: absolute !important;
+      bottom: -25% !important; } }
+  @media only screen and (max-width: 450px) {
+    .wrap_promo_slider .foto_ {
+      width: 100%; }
+    .wrap_promo_slider .short_text {
+      height: 140px;
+      width: 100% !important; }
+    .wrap_promo_slider .wrap_p {
+      padding: 15px 15px 0 15px !important; }
+    .wrap_promo_slider .control_slider {
+      margin: 0 0 17px 15px !important; } }
 
 /***************
   Bloks all lego
@@ -4499,6 +4533,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
           position: relative;
           top: 8px;
           left: 11px; }
+  @media only screen and (max-width: 600px) {
+    .top-video-blok {
+      display: none !important; } }
 
 /*********************
  2. Analitic top list
@@ -4626,6 +4663,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     border-top: 1px solid #0d97bc; }
     .now_channel li.act span, .now_channel li.act a {
       color: #ffffff; }
+  @media only screen and (max-width: 600px) {
+    .now_channel {
+      display: none !important; } }
 
 .seperato_line {
   height: 6px;
@@ -4693,17 +4733,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
       color: #0e4f67;
       display: block;
       margin-bottom: 10px; }
+      .box_more-category .box_more-link a:hover {
+        color: #106d87; }
     .box_more-category .box_more-link .box_more-data {
       display: block;
       font-size: 10px;
       color: #b4b2b2; }
-    @media only screen and (max-width: 973px) {
-      .box_more-category .box_more-link {
-        width: 37%; } }
-    @media only screen and (max-width: 886px) {
-      .box_more-category .box_more-link {
-        width: 100%;
-        margin-bottom: 10px; } }
     @media only screen and (max-width: 767px) {
       .box_more-category .box_more-link {
         width: 42%; } }
@@ -4732,6 +4767,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
       font-size: 0.75em;
       line-height: 15px;
       display: block; }
+      .box-news ul li a:hover {
+        color: #2795B6; }
     .box-news ul li .data {
       font-size: 0.625em;
       color: #b4b2b2;
@@ -4747,9 +4784,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
 ****************************/
 .foto-post-news {
   /* gallery controll arrow */
-  /* left element */
-  /* Center element */
-  /* right element */ }
+  /* Item element */
+  /* Center element */ }
+  .foto-post-news .wrap_more-category {
+    width: 629px;
+    margin: 0 auto; }
+  .foto-post-news .wrap_list_item {
+    width: 580px;
+    float: left;
+    overflow: hidden; }
+  .foto-post-news ul {
+    margin: 0;
+    padding: 0;
+    width: 2000em; }
   .foto-post-news .arrow_left {
     margin-top: 16px;
     height: 174px;
@@ -4765,17 +4812,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     background: url("../img/arrow_right_foto_post.png") center center no-repeat #3c3f45;
     float: left;
     cursor: pointer; }
-  .foto-post-news .left-photo {
+  .foto-post-news ul li {
+    list-style: none;
+    display: block;
     margin-top: 16px;
     float: left;
     width: 132px;
     overflow: hidden;
     margin-right: 1px; }
-    .foto-post-news .left-photo .hidden_fix {
+    .foto-post-news ul li .hidden_fix {
       width: 132px;
       height: 88px;
       overflow: hidden; }
-    .foto-post-news .left-photo .title {
+    .foto-post-news ul li .title {
       font-size: 0.6875em;
       line-height: 12px;
       color: #efefef;
@@ -4789,6 +4838,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     float: left;
     position: relative;
     margin-right: 1px; }
+    .foto-post-news .center-photo .hidden_fix {
+      width: 313px;
+      height: inherit;
+      overflow: hidden; }
     .foto-post-news .center-photo .title {
       background: url("../img/gradi_trans_to_black_71.png") left top repeat-x;
       font-size: 0.9375em;
@@ -4798,26 +4851,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
       padding: 21px 25px 20px;
       position: absolute;
       bottom: 0; }
-  .foto-post-news .right-photo {
-    margin-top: 16px;
-    float: left;
-    width: 132px;
-    overflow: hidden;
-    margin-right: 1px; }
-    .foto-post-news .right-photo .hidden_fix {
-      width: 132px;
-      height: 88px;
-      overflow: hidden; }
-    .foto-post-news .right-photo .title {
-      font-size: 0.6875em;
-      line-height: 12px;
-      color: #efefef;
-      padding: 11px 16px 0;
-      background: #3c3f45;
-      height: 86px; }
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 977px) {
     .foto-post-news {
       display: none; } }
+  @media only screen and (max-width: 768px) {
+    .foto-post-news {
+      display: block !important; } }
+  @media only screen and (max-width: 653px) {
+    .foto-post-news .wrap_more-category {
+      width: 433px !important; }
+    .foto-post-news .wrap_list_item {
+      width: 384px; }
+    .foto-post-news li {
+      list-style: none;
+      display: block;
+      margin-top: 16px;
+      height: auto !important;
+      float: left;
+      width: 127px !important;
+      overflow: hidden;
+      margin-right: 1px; }
+      .foto-post-news li .hidden_fix {
+        width: 134px !important;
+        height: 88px !important;
+        overflow: hidden;
+        text-align: center; }
+      .foto-post-news li .title {
+        position: relative !important;
+        font-size: 0.6875em !important;
+        line-height: 12px !important;
+        color: #efefef !important;
+        padding: 11px 16px 0 !important;
+        background: #3c3f45 !important;
+        height: 86px !important; } }
+  @media only screen and (max-width: 459px) {
+    .foto-post-news {
+      display: none !important; } }
 
 /****************
  7. Video slider
@@ -4920,6 +4989,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
   .wrap_video_slider ul li {
     float: left;
     list-style: none; }
+  .wrap_video_slider .slider_video-items {
+    width: 629px;
+    margin: 0 auto; }
+    .wrap_video_slider .slider_video-items ul {
+      width: 2000em; }
+    .wrap_video_slider .slider_video-items .wrap_list_item {
+      overflow: hidden;
+      width: 580px;
+      float: left; }
   .wrap_video_slider .video-item {
     margin-top: 16px;
     float: left;
@@ -4980,9 +5058,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
         line-height: 11px;
         color: #5da5c0;
         display: block; }
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 977px) {
     .wrap_video_slider {
       display: none; } }
+  @media only screen and (max-width: 768px) {
+    .wrap_video_slider {
+      display: block !important; } }
+  @media only screen and (max-width: 653px) {
+    .wrap_video_slider .slider_video-items {
+      width: 432px !important; }
+    .wrap_video_slider .video-item {
+      width: 126px !important; }
+    .wrap_video_slider .wrap_list_item {
+      width: 383px !important; } }
+  @media only screen and (max-width: 459px) {
+    .wrap_video_slider {
+      display: none !important; } }
 
 /*************************
  8. Advertising(spam) mini
@@ -5122,9 +5213,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
       margin-left: 5px; }
     .advertising-min .more_info-text.fuel_rate i.down {
       background-position: -6px 0; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 955px) {
     .advertising-min {
       display: none; } }
+  @media only screen and (max-width: 768px) {
+    .advertising-min {
+      display: block !important; } }
+  @media only screen and (max-width: 668px) {
+    .advertising-min {
+      display: none !important; } }
 
 .advertising_sidebar {
   margin-bottom: 30px;
@@ -5140,7 +5237,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     width: 100%;
     overflow: hidden;
     height: auto; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 955px) {
     .advertising_sidebar {
       display: none; } }
 
@@ -5233,6 +5330,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     @media only screen and (max-width: 767px) {
       .box-news_do_not_miss .box_more-link {
         width: 52.436%; } }
+  @media only screen and (max-width: 955px) {
+    .box-news_do_not_miss {
+      display: none !important; } }
+  @media only screen and (max-width: 460px) {
+    .box-news_do_not_miss {
+      display: block !important; } }
 
 /*******************
   10.  Box news blog
@@ -5303,6 +5406,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     @media only screen and (max-width: 320px) {
       .box-list_blog .box_more-link {
         width: 75.436%; } }
+  @media only screen and (max-width: 954px) {
+    .box-list_blog {
+      display: none !important; } }
+  @media only screen and (max-width: 460px) {
+    .box-list_blog {
+      display: block !important; } }
 
 /**********************
  11. Box announcements
@@ -5395,6 +5504,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b3d8', end
     @media only screen and (max-width: 320px) {
       .box-announcements .box_more-link {
         width: 73.436%; } }
+  @media only screen and (max-width: 955px) {
+    .box-announcements {
+      display: none !important; } }
+  @media only screen and (max-width: 460px) {
+    .box-announcements {
+      display: block !important; } }
 
 /*******************
  12. box list links
@@ -5452,11 +5567,46 @@ html, body {
   height: 33.25em;
   padding-top: 52px;
   background: url("../img/footer_bg_r.jpg") left top repeat #2c2d33;
-  /* Text p */ }
+  /* Text p */
+  /* change region and change project */ }
   .footer p {
     color: #999999;
     font-size: 11px;
     line-height: 16px; }
+  .footer .change_region,
+  .footer .change_project {
+    display: none; }
+  @media only screen and (max-width: 950px) {
+    .footer {
+      height: auto; } }
   @media only screen and (max-width: 768px) {
     .footer {
       height: auto; } }
+  @media only screen and (max-width: 767px) {
+    .footer {
+      padding-top: 30px;
+      /* menu footer white links */ }
+      .footer .change_region,
+      .footer .change_project {
+        display: block;
+        margin-bottom: 30px; }
+      .footer .region_fix {
+        display: none; }
+      .footer .media_efir .large-2,
+      .footer .media_efir .large-3 {
+        width: 50%; }
+      .footer .media_efir .large-7 {
+        margin: 0 0 25px 0;
+        border-bottom: 1px solid #4c4b4b;
+        padding-bottom: 25px; }
+      .footer .links_white_under {
+        margin: 0 0 25px 0; }
+        .footer .links_white_under ul {
+          margin: 0;
+          padding: 0; }
+        .footer .links_white_under li {
+          float: left;
+          margin-right: 3%; } }
+  @media only screen and (max-width: 415px) {
+    .footer .links_white_under {
+      display: none; } }

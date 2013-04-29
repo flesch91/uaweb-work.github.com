@@ -157,6 +157,11 @@ header{margin-bottom: emCalc(16px)}
   @media only screen and (max-width: 955px){width: 50% !important;}
   @media only screen and (max-width: 600px){width: 100% !important;}
 }
+
+.colum_8_media{
+  @media only screen and (max-width: 954px){width: 100% !important;}
+}
+
 .tabs_fix_full{
   @media only screen and (max-width: 955px){width: 100% !important;}
 }
@@ -318,10 +323,11 @@ header{margin-bottom: emCalc(16px)}
   @media only screen and (max-width: 976px){display: none}
 
 }
-/***************
-  Change language
-****************/
-.change_lang{
+/*****************************
+  Change language and project
+*****************************/
+.change_lang,
+.change_project{
   min-width: 51px;
   margin-right: emCalc(16px);
   display: inline-block;
@@ -342,6 +348,7 @@ header{margin-bottom: emCalc(16px)}
     width: 131px;
     background: #ffffff;
     margin-bottom: 0;
+    font-size: 0.67em;
     @include radius(0);
   }
   .c_search_submit{
@@ -448,6 +455,7 @@ header{margin-bottom: emCalc(16px)}
   .text_news_title{
     float: left;
     margin-top: emCalc(-1px);
+    width: 80%;
     a{
       font-size:emCalc(12px);
       color: #656565;
@@ -537,7 +545,6 @@ header{margin-bottom: emCalc(16px)}
           left: 3px;
           top: 6px;
         }
-        @media only screen and (max-width: 870px){display: none}
       }
       li.add_news:before{
         content: url("../img/css_triangle_black.png");
@@ -589,6 +596,11 @@ header{margin-bottom: emCalc(16px)}
         }
 
       }
+    }
+    /* Media 600px change height wraper list */
+
+    @media only screen and (max-width: 600px){
+      ul{height: 625px;}
     }
   }
   /* Time refresh */
@@ -679,10 +691,37 @@ header{margin-bottom: emCalc(16px)}
       }
     }
   }
-  @media only screen and (max-width: 978px) {
+  @media only screen and (max-width: 955px) {
     .foto_,.short_text{
       width: 100%;
       height: auto;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .foto_{width: 50%}
+    .short_text{
+      width: 50% !important;
+      height: 190px;
+      p{display: none}
+      h3{
+        font-size: emCalc(16px);
+      }
+    }
+    .control_slider{
+      position: absolute !important;
+      bottom: -25% !important;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .foto_{width: 100%}
+    .short_text{
+      height: 140px;
+      width: 100% !important;
+    }
+    .wrap_p{padding:  15px 15px 0 15px !important;}
+
+    .control_slider{
+      margin: 0 0 17px 15px !important;
     }
   }
 }
@@ -761,6 +800,7 @@ header{margin-bottom: emCalc(16px)}
       }
     }
   }
+  @media only screen and (max-width: 600px) {display: none !important;}
 }
 
 /*********************
@@ -893,6 +933,7 @@ header{margin-bottom: emCalc(16px)}
     border-top: 1px solid #0d97bc;
     span,a{color: #ffffff}
   }
+  @media only screen and (max-width: 600px) {display: none !important;}
 }
 .seperato_line{
   @include seperator(#ededed);
@@ -955,14 +996,15 @@ header{margin-bottom: emCalc(16px)}
       color: #0e4f67;
       display: block;
       margin-bottom: 10px;
+
+      //hover
+      &:hover{color: #106d87;}
     }
     .box_more-data{
       display: block;
       font-size: 10px;
       color: #b4b2b2;
     }
-    @media only screen and (max-width: 973px){width: 37%;}
-    @media only screen and (max-width: 886px){width: 100%;margin-bottom: 10px}
     @media only screen and (max-width: 767px){width: 42%;}
     @media only screen and (max-width: 320px){width: 100%;margin-bottom: 10px}
   }
@@ -987,6 +1029,11 @@ header{margin-bottom: emCalc(16px)}
       font-size: emCalc(12px);
       line-height: 15px;
       display: block;
+
+      //hover
+      &:hover{
+        color: #2795B6;
+      }
     }
     .data{
       font-size: emCalc(10px);
@@ -1008,6 +1055,10 @@ header{margin-bottom: emCalc(16px)}
  6. foto post (reportash) news
 ****************************/
 .foto-post-news{
+  .wrap_more-category{width: 629px; margin: 0 auto;}
+  .wrap_list_item{width: 580px; float: left; overflow: hidden}
+  ul{margin: 0; padding: 0; width: 2000em}
+
 /* gallery controll arrow */
   .arrow_left{
     margin-top: 16px;
@@ -1026,8 +1077,10 @@ header{margin-bottom: emCalc(16px)}
     float: left;
     cursor: pointer;
   }
-/* left element */
-  .left-photo{
+/* Item element */
+  ul li{
+    list-style: none;
+    display: block;
     margin-top: 16px;
     float: left;
     width: 132px;
@@ -1043,6 +1096,8 @@ header{margin-bottom: emCalc(16px)}
       height: 86px;
     }
   }
+
+
 /* Center element */
   .center-photo{
     width: 313px;
@@ -1051,6 +1106,7 @@ header{margin-bottom: emCalc(16px)}
     float: left;
     position: relative;
     margin-right: 1px;
+    .hidden_fix{width: 313px; height: inherit; overflow: hidden}
     .title{
       background: url("../img/gradi_trans_to_black_71.png") left top repeat-x;
       font-size: emCalc(15px);
@@ -1062,24 +1118,39 @@ header{margin-bottom: emCalc(16px)}
       bottom: 0;
     }
   }
-/* right element */
-  .right-photo{
-    margin-top: 16px;
-    float: left;
-    width: 132px;
-    overflow: hidden;
-    margin-right: 1px;
-    .hidden_fix{width: 132px; height: 88px; overflow: hidden}
-    .title{
-      font-size: emCalc(11px);
-      line-height: 12px;
-      color: #efefef;
-      padding: 11px 16px 0;
-      background: #3c3f45;
-      height: 86px;
+
+  @media only screen and (max-width: 977px){display: none}
+  @media only screen and (max-width: 768px){display: block !important;}
+  @media only screen and (max-width: 653px){
+
+    .wrap_more-category{width: 433px !important;}
+
+    .wrap_list_item{width: 384px}
+
+    li{
+      list-style: none;
+      display: block;
+      margin-top: 16px;
+      height: auto !important;
+      float: left;
+      width: 127px !important;
+      overflow: hidden;
+      margin-right: 1px;
+
+      .hidden_fix{width: 134px !important; height: 88px !important; overflow: hidden;text-align: center;}
+
+      .title{
+        position: relative !important;
+        font-size: emCalc(11px) !important;
+        line-height: 12px !important;
+        color: #efefef !important;
+        padding: 11px 16px 0 !important;
+        background: #3c3f45 !important;
+        height: 86px !important;
+      }
     }
   }
-  @media only screen and (max-width: 960px){display: none}
+  @media only screen and (max-width: 459px){display: none !important;}
 }
 
 /****************
@@ -1179,6 +1250,14 @@ header{margin-bottom: emCalc(16px)}
   ul{margin: 0;padding: 0}
   ul li{float: left; list-style: none;}
 
+  .slider_video-items{
+
+    width: 629px;
+    margin: 0 auto;
+
+    ul{width: 2000em;}
+    .wrap_list_item{overflow: hidden; width: 580px; float: left}
+  }
   .video-item{
     margin-top: 16px;
     float: left;
@@ -1224,7 +1303,14 @@ header{margin-bottom: emCalc(16px)}
       }
     }
   }
-  @media only screen and (max-width: 960px){display: none}
+  @media only screen and (max-width: 977px){display: none}
+  @media only screen and (max-width: 768px){display: block !important;}
+  @media only screen and (max-width: 653px){
+    .slider_video-items{width: 432px !important;}
+    .video-item {width: 126px !important;}
+    .wrap_list_item{width: 383px !important;}
+  }
+  @media only screen and (max-width: 459px){display: none !important;}
 }
 
 
@@ -1354,7 +1440,9 @@ header{margin-bottom: emCalc(16px)}
       }
     }
   }
-  @media only screen and (max-width: 768px){display: none}
+  @media only screen and (max-width: 955px){display: none}
+  @media only screen and (max-width: 768px){display: block !important;}
+  @media only screen and (max-width: 668px){display: none !important;}
 }
 .advertising_sidebar{
   margin-bottom: 30px;
@@ -1373,7 +1461,8 @@ header{margin-bottom: emCalc(16px)}
     overflow: hidden;
     height: auto;
   }
-  @media only screen and (max-width: 768px){display: none}
+  @media only screen and (max-width: 955px){display: none}
+
 }
 
 /**********************
@@ -1456,6 +1545,8 @@ header{margin-bottom: emCalc(16px)}
 
     @media only screen and (max-width: 767px){width: 52.436%;}
   }
+  @media only screen and (max-width: 955px){display: none !important;}
+  @media only screen and (max-width: 460px){display: block !important;}
 }
 
 /*******************
@@ -1523,6 +1614,9 @@ header{margin-bottom: emCalc(16px)}
     @media only screen and (max-width: 767px){width: 76.436%;}
     @media only screen and (max-width: 320px){width: 75.436%;}
   }
+
+  @media only screen and (max-width: 954px){display: none !important;}
+  @media only screen and (max-width: 460px){display: block !important;}
 }
 
 /**********************
@@ -1597,6 +1691,8 @@ header{margin-bottom: emCalc(16px)}
     @media only screen and (max-width: 767px){width: 76.436%;}
     @media only screen and (max-width: 320px){width: 73.436%;}
   }
+  @media only screen and (max-width: 955px){display: none !important;}
+  @media only screen and (max-width: 460px){display: block !important;}
 }
 /*******************
  12. box list links
@@ -1658,5 +1754,44 @@ html, body {
     font-size: 11px;
     line-height: 16px;
   }
+  /* change region and change project */
+  .change_region,
+  .change_project{
+    display: none;
+  }
+
+
+  @media only screen and (max-width: 950px){height: auto;}
+
   @media only screen and (max-width: 768px){height: auto }
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 30px;
+
+    .change_region,
+    .change_project{ display: block; margin-bottom: 30px}
+
+    .region_fix{display: none}
+
+    .media_efir{
+      .large-2,
+      .large-3{width: 50%}
+      .large-7{
+          margin: 0 0 25px 0;
+          border-bottom: 1px solid #4c4b4b;
+          padding-bottom: 25px;
+      }
+    }
+
+  /* menu footer white links */
+    .links_white_under{
+      margin: 0 0 25px 0;
+       ul{
+         margin: 0;
+         padding: 0;
+       }
+       li{float: left; margin-right: 3%;}
+    }
+  }
+  @media only screen and (max-width: 415px) {.links_white_under{display: none}}
 }

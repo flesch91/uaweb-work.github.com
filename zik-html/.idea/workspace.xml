@@ -2,7 +2,7 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/scss/foundation/components/_top-bar.scss" line="190" />
-    <bookmark url="file://$PROJECT_DIR$/scss/foundation.scss" line="812" />
+    <bookmark url="file://$PROJECT_DIR$/scss/foundation.scss" line="852" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cc12afa-8fc4-4a82-a6de-a521a2fed379" name="Default" comment="">
@@ -13,16 +13,16 @@
     </list>
     <ignored path="zik.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1366839986294" ignored="false" />
+    <file path="/Dummy.txt" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1367089634282" ignored="false" />
     <file path="/index.php" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363645912742" ignored="false" />
     <file path="/a.coffee" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363647017667" ignored="false" />
     <file path="/a.less" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363647022134" ignored="false" />
     <file path="/style.sass" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363648845624" ignored="false" />
-    <file path="/foundation.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1366844986491" ignored="false" />
+    <file path="/foundation.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1367197574159" ignored="false" />
     <file path="/style.css" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1364674275536" ignored="false" />
     <file path="/README." changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363651405583" ignored="false" />
     <file path="/README" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363651887139" ignored="false" />
-    <file path="/index.html" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1366755176612" ignored="false" />
+    <file path="/index.html" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1367196035500" ignored="false" />
     <file path="/_top-bar.scss" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1366665381431" ignored="false" />
     <file path="/dummy.xml" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1366479754262" ignored="false" />
     <file path="/css.css" changelist="4cc12afa-8fc4-4a82-a6de-a521a2fed379" time="1363969376389" ignored="false" />
@@ -61,20 +61,12 @@
           <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="6" selection-start="928" selection-end="928" vertical-scroll-proportion="0.5083732">
+                <state line="1188" column="7" selection-start="59306" selection-end="59306" vertical-scroll-proportion="0.90407676">
                   <folding>
-                    <marker date="1366919490952" expanded="true" signature="752:894" placeholder="..." />
-                    <marker date="1366919490952" expanded="true" signature="845:882" placeholder="{...}" />
+                    <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#0;n#aside#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1367196213396" expanded="true" signature="752:894" placeholder="..." />
+                    <marker date="1367196213396" expanded="true" signature="845:882" placeholder="{...}" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scss/css/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="936" column="20" selection-start="20788" selection-end="20806" vertical-scroll-proportion="0.0">
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -88,6 +80,15 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scss/css/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="936" column="20" selection-start="20788" selection-end="20806" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -95,34 +96,23 @@
           <file leaf-file-name="foundation.scss" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/foundation.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1373" column="17" selection-start="37748" selection-end="37748" vertical-scroll-proportion="0.71565115">
+                <state line="1030" column="21" selection-start="29833" selection-end="29833" vertical-scroll-proportion="0.5724551">
                   <folding>
                     <element signature="e#3377#4040#2" expanded="true" />
                     <element signature="e#4873#5536#2" expanded="true" />
-                    <element signature="e#14985#15904#0" expanded="false" />
-                    <element signature="e#16748#19632#0" expanded="false" />
-                    <element signature="e#19699#21100#0" expanded="false" />
-                    <element signature="e#22041#22767#0" expanded="false" />
-                    <element signature="e#22858#24449#0" expanded="false" />
-                    <element signature="e#24513#26718#0" expanded="false" />
-                    <element signature="e#26733#26789#0" expanded="false" />
-                    <element signature="e#26880#28532#0" expanded="false" />
-                    <element signature="e#28610#29204#0" expanded="false" />
-                    <element signature="e#29312#31024#0" expanded="false" />
-                    <element signature="e#31098#34427#0" expanded="false" />
-                    <element signature="e#37911#39731#0" expanded="false" />
-                    <element signature="e#39810#41221#0" expanded="false" />
-                    <element signature="e#41312#42874#0" expanded="false" />
-                    <element signature="e#42953#43561#0" expanded="false" />
+                    <element signature="e#23759#25350#0" expanded="false" />
+                    <element signature="e#25414#27691#0" expanded="false" />
+                    <element signature="e#27706#27762#0" expanded="false" />
+                    <element signature="e#42308#43863#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_visibility.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scss/foundation/components/_visibility.scss">
+          <file leaf-file-name="_foundation-global.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scss/foundation/_foundation-global.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="95" column="3" selection-start="3220" selection-end="3220" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -137,10 +127,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_foundation-global.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scss/foundation/_foundation-global.scss">
+          <file leaf-file-name="_visibility.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scss/foundation/components/_visibility.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="95" column="3" selection-start="3220" selection-end="3220" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -180,8 +170,8 @@
         <option value="$PROJECT_DIR$/scss/foundation/_foundation-global.scss" />
         <option value="$PROJECT_DIR$/css/jquery.mCustomScrollbar.css" />
         <option value="$PROJECT_DIR$/scss/foundation/components/_top-bar.scss" />
-        <option value="$PROJECT_DIR$/scss/foundation.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/scss/foundation.scss" />
       </list>
     </option>
   </component>
@@ -240,7 +230,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,6 +250,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,16 +268,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Project/compas_work" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="299" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="978" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="285" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -313,10 +303,10 @@
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
       <method />
     </configuration>
-    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
       <method />
     </configuration>
-    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -345,14 +335,14 @@
       </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
@@ -442,7 +432,11 @@
       <created>1366759779356</created>
       <updated>1366759779356</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix media 460 and 320 + ipad">
+      <created>1366921466206</created>
+      <updated>1366921466206</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -473,11 +467,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13850267" sideWeight="0.8479467" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14010695" sideWeight="0.8487208" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15205327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1512792" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -531,7 +525,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix media." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix media 460 and 320 + ipad" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -555,6 +549,7 @@
     <MESSAGE value="Fix:&#10;6. foto post (reportash) news" />
     <MESSAGE value="Fix responsive and sponsor elements + top menu and slide left." />
     <MESSAGE value="fix media." />
+    <MESSAGE value="fix media 460 and 320 + ipad" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -664,35 +659,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/foundation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1373" column="17" selection-start="37748" selection-end="37748" vertical-scroll-proportion="0.71565115">
+        <state line="1030" column="21" selection-start="29833" selection-end="29833" vertical-scroll-proportion="0.5724551">
           <folding>
             <element signature="e#3377#4040#2" expanded="true" />
             <element signature="e#4873#5536#2" expanded="true" />
-            <element signature="e#14985#15904#0" expanded="false" />
-            <element signature="e#16748#19632#0" expanded="false" />
-            <element signature="e#19699#21100#0" expanded="false" />
-            <element signature="e#22041#22767#0" expanded="false" />
-            <element signature="e#22858#24449#0" expanded="false" />
-            <element signature="e#24513#26718#0" expanded="false" />
-            <element signature="e#26733#26789#0" expanded="false" />
-            <element signature="e#26880#28532#0" expanded="false" />
-            <element signature="e#28610#29204#0" expanded="false" />
-            <element signature="e#29312#31024#0" expanded="false" />
-            <element signature="e#31098#34427#0" expanded="false" />
-            <element signature="e#37911#39731#0" expanded="false" />
-            <element signature="e#39810#41221#0" expanded="false" />
-            <element signature="e#41312#42874#0" expanded="false" />
-            <element signature="e#42953#43561#0" expanded="false" />
+            <element signature="e#23759#25350#0" expanded="false" />
+            <element signature="e#25414#27691#0" expanded="false" />
+            <element signature="e#27706#27762#0" expanded="false" />
+            <element signature="e#42308#43863#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="6" selection-start="928" selection-end="928" vertical-scroll-proportion="0.5083732">
+        <state line="1188" column="7" selection-start="59306" selection-end="59306" vertical-scroll-proportion="0.90407676">
           <folding>
-            <marker date="1366919490952" expanded="true" signature="752:894" placeholder="..." />
-            <marker date="1366919490952" expanded="true" signature="845:882" placeholder="{...}" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#0;n#aside#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1367196213396" expanded="true" signature="752:894" placeholder="..." />
+            <marker date="1367196213396" expanded="true" signature="845:882" placeholder="{...}" />
           </folding>
         </state>
       </provider>
