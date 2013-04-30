@@ -3,13 +3,13 @@
 //
 
 // We use these to controls height and width styles.
-$f-dropdown-max-width:            200px !default;
+$f-dropdown-max-width:            165px !default;
 $f-dropdown-height:               auto !default;
 $f-dropdown-max-height:           none !default;
 $f-dropdown-margin-top:           2px !default;
 
 // We use this to control the background color
-$f-dropdown-bg:                   #fff !default;
+$f-dropdown-bg:                   #41444a !default;
 
 // We use this to set the border styles for dropdowns.
 $f-dropdown-border-style:         solid !default;
@@ -18,16 +18,17 @@ $f-dropdown-border-color:         darken(#fff, 20%) !default;
 
 // We use these to style the triangle pip.
 $f-dropdown-triangle-size:        6px !default;
-$f-dropdown-triangle-color:       #fff !default;
-$f-dropdown-triangle-side-offset: 10px !default;
+$f-dropdown-triangle-color:       #41444a !default;
+$f-dropdown-triangle-side-offset: 11px !default;
 
 // We use these to control styles for the list elements.
 $f-dropdown-list-style:           none !default;
-$f-dropdown-font-color:           #555 !default;
-$f-dropdown-font-size:            emCalc(14px) !default;
-$f-dropdown-list-padding:         emCalc(5px) emCalc(10px) !default;
+$f-dropdown-font-color:           #cccccc !default;
+$f-dropdown-font-size:            emCalc(12px) !default;
+$f-dropdown-list-padding:         emCalc(8px) emCalc(5px) !default;
 $f-dropdown-line-height:          emCalc(18px) !default;
-$f-dropdown-list-hover-bg:        #eeeeee !default;
+$f-dropdown-list-hover-bg:        none !default;
+$f-dropdown-list-hover-color:     #fff !default;
 $dropdown-mobile-left:            0 !default;
 
 // We use this to control the styles for when the dropdown has custom content.
@@ -56,6 +57,7 @@ $f-dropdown-content-padding:      emCalc(20px) !default;
     background: $f-dropdown-bg;
     border: $f-dropdown-border-style $f-dropdown-border-width $f-dropdown-border-color;
     font-size: $em-base;
+    padding: 15px;
     z-index: 99;
   }
   @else if $content == content {
@@ -99,10 +101,16 @@ $f-dropdown-content-padding:      emCalc(20px) !default;
   cursor: pointer;
   padding: $f-dropdown-list-padding;
   line-height: $f-dropdown-line-height;
+  border-bottom: 1px solid #4b4e53;
   margin: 0;
-
+  &:last-child{border-bottom: none}
   &:hover,
-  &:focus { background: $f-dropdown-list-hover-bg; }
+  &:focus {
+    background: $f-dropdown-list-hover-bg;
+
+    a{color: $f-dropdown-list-hover-color;}
+
+  }
 
   a { color: $f-dropdown-font-color; }
 }
@@ -128,7 +136,7 @@ $f-dropdown-content-padding:      emCalc(20px) !default;
     &.content { @include dropdown-container(content, $triangle:false); }
 
     // Sizes
-    &.tiny    { max-width: 200px; }
+    &.tiny    { max-width: 165px; }
     &.small   { max-width: 300px; }
     &.medium  { max-width: 500px; }
     &.large   { max-width: 800px; }

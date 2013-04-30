@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ZIK.UA</title>
+    <link rel="stylesheet" href="css/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Sidebar menu responsive -->
+    <link rel="stylesheet" href="css/jquery.sidr.dark.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <script src="js/vendor/custom.modernizr.js"></script>
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="css/ie8_grid.css" />
+    <![endif]-->
+    <!--[if gte IE 9]>
+
+    <style type="text/css">
+        .gradient,
+        .now_channel li.act,
+        .wrap_video_slider.video-item.title{
+            filter: none;
+        }
+    </style>
+
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="black-line">
+        <div class="row">
+            <div class="logo">
+                <a href="#"><img src="img/logo.jpg" alt="Zik"/></a>
+            </div>
+            <div class="large-10 large-offset-2 columns">
+                <a href="#" class="btn_on_air gradient media_320"><span>ефір телеканалу</span><i></i></a>
+                <div class="sponsors">
+                    <div class="sponsors_list">
+                        <a href="#"><img src="img/sponsor/ohljad.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/narodnyj_control.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/istorychna_pravds.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/lystracija.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/pravo_cacija.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/pohljad.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/pro_karpaty.png" alt="sponsor"/></a>
+                    </div>
+                </div>
+                <div class="other_project right">
+                    <div class="link"><span class="left">інші проекти</span> <i></i></div>
+                    <div class="other_project_list_links">
+                        <div class="row">
+                            <div class="large-4 columns">
+                                <ul>
+                                    <li><a href="#">Вільний мікрофон</a></li>
+                                    <li><a href="#">Здоров будь!</a></li>
+                                    <li><a href="#">Історична правда з Вахтангом Кіпіані</a></li>
+                                    <li><a href="#">Люстрація</a></li>
+                                </ul>
+                            </div>
+                            <div class="large-2 columns">
+                                <ul>
+                                    <li><a href="#">Народний контроль</a></li>
+                                    <li><a href="#">Огляд дня</a></li>
+                                    <li><a href="#">Погляд на тиждень</a></li>
+                                    <li><a href="#">ПРАВОкація</a></li>
+                                </ul>
+                            </div>
+                            <div class="large-2 columns">
+                                <ul>
+                                    <li><a href="#">Прямим текстом</a></li>
+                                    <li><a href="#">Перевірка на вечірку</a></li>
+                                    <li><a href="#">Погода</a></li>
+                                    <li><a href="#">Про Карпати</a></li>
+                                </ul>
+                            </div>
+                            <div class="large-4 columns">
+                                <ul class="last">
+                                    <li><a href="#">Твоє бачення</a></li>
+                                    <li><a href="#">Чвертка з паном Марциняком</a></li>
+                                    <li><a href="#">101. Служба порятунку</a></li>
+                                    <li><a href="#">Інші проекти</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow_black_line"></div>
+    </div>
+    <div class="dark-gray-line">
+        <div class="row">
+            <div class="large-10 large-offset-2 columns">
+                <!-- Select region -->
+                <form class="custom expand change_region left">
+                    <select id="region_select">
+                        <option DISABLED>Виберіть регіон</option>
+                        <option>Львів</option>
+                        <option>Тернопіль</option>
+                        <option>Київ</option>
+                    </select>
+                </form><!--END Select region -->
+
+                <!-- List links top -->
+                <div class="list_links-top left">
+                    <ul>
+                        <li><a href="#">Телепроекти</a></li>
+                        <li><a href="#">Анонси</a></li>
+                        <li><a href="#">Чати</a></li>
+                        <li><a href="#">Архів</a></li>
+                    </ul>
+                </div><!--END List links top -->
+
+                <!--Change language-->
+                <form class="custom expand change_lang left">
+                    <select id="lang_select">
+                        <option>Укр</option>
+                        <option>Рус</option>
+                        <option>Eng</option>
+                    </select>
+                </form><!--END Change language-->
+
+                <!--Search-->
+                <form class="search_form left">
+                    <input type="text" id="search_input" class="c_search_input left" placeholder="Пошук" />
+                    <a href="#" id="search_submit" class="c_search_submit left"></a>
+                </form>
+                <!--END Search-->
+
+                <a href="#" class="btn_on_air gradient"><span>ефір телеканалу</span><i></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="light-gray-line">
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="top-menu">
+                    <nav class="top-bar">
+                        <div class="title-area">
+                            <!-- Title Area -->
+                            <div class="name"></div>
+                            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                            <div class="toggle-topbar menu-icon">
+                                <a href="#" class="left" id="responsive-menu-button"><span>Меню&nbsp;</span></a>
+                                <a id="search_box"><i></i></a>
+                            </div>
+                            <div class="search_box_media">
+                                <!--Search-->
+                                <form class="search_form left">
+                                    <input type="text" id="search_input" class="c_search_input left" placeholder="Пошук" />
+                                    <a href="#" id="search_submit" class="c_search_submit left"></a>
+                                </form>
+                                <!--END Search-->
+                            </div>
+                            <!-- socil links -->
+                            <div class="social_wrap right media_460">
+                                <ul>
+                                    <li class="facebook"><a href="#"></a></li>
+                                    <li class="twitter"><a href="#"></a></li>
+                                    <li class="linkedin"><a href="#"></a></li>
+                                    <li class="youtube"><a href="#"></a></li>
+                                    <li class="rss"><a href="#"></a></li>
+                                    <li class="mail"><a href="#"></a></li>
+                                    <li class="phone"><a href="#"></a></li>
+                                </ul>
+                            </div><!--END socil links -->
+                        </div>
+                        <!-- Drobdown search-->
+                        <section class="top-bar-section">
+                            <!-- Right Nav Section -->
+                            <div id="navigation">
+                                <ul class="right">
+                                    <li><a href="#">Новини</a></li>
+                                    <li class="active"><a href="#">Західна Україна</a></li>
+                                    <li><a href="#">Влада</a></li>
+                                    <li><a href="#">Економіка</a></li>
+                                    <li><a href="#">Кримінал</a></li>
+                                    <li><a href="#">Спорт</a></li>
+                                    <li><a href="#">Людина</a></li>
+                                    <li><a href="#">Світ</a></li>
+                                    <li><a href="#">Аналітика</a></li>
+                                    <li><a href="#">Фото</a></li>
+                                    <li><a href="#">Відео</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="wrap_site">
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="banner_top">
+            <a href="#">реклама</a>
+            <img src="img/baner.jpg" alt="banner">
+        </div>
+    </div>
+</div>
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+    <div class="large-8 columns">
+        <!-- Fast news -->
+        <div class="fast_news_slide">
+            <div class="left_arrow"><i></i></div>
+            <div class="right_arrow"><i></i></div>
+            <div class="text_news_title"><a href="#">КВУ готує звернення до КС щодо неконституційності закону про референдум</a></div>
+            <div class="clearfix"></div>
+        </div><!--END Fast news -->
+    </div>
+    <div class="large-4 columns">
+        <!-- socil links -->
+        <div class="social_wrap right">
+            <ul>
+                <li class="facebook"><a href="#"></a></li>
+                <li class="twitter"><a href="#"></a></li>
+                <li class="linkedin"><a href="#"></a></li>
+                <li class="youtube"><a href="#"></a></li>
+                <li class="rss"><a href="#"></a></li>
+                <li class="mail"><a href="#"></a></li>
+                <li class="phone"><a href="#"></a></li>
+            </ul>
+        </div><!--END socil links -->
+
+    </div>
+</div>
+<div class="row">
+<!-- Main Blog Content -->
+<section>
+    <div class="large-8 columns colum_6_media" role="content">
+        <div class="seperato_line"></div>
+        <aside>
+            <header>
+                <h5 class="left m_right-50">Аналітик</h5>
+                <div class="all_thems_news_dropdown left" data-dropdown="all_thems_news_dropdown">
+                    <span>Усі теми</span>
+                    <i></i>
+                </div>
+
+                <!-- Dropdown list thems -->
+                <ul id="all_thems_news_dropdown" class="f-dropdown" data-dropdown-content>
+                    <li><a href="#">Львівські Обсервації</a></li>
+                    <li><a href="#">Трибуна</a></li>
+                    <li><a href="#">Тема Економіка</a></li>
+                    <li><a href="#">Тема Захід</a></li>
+                    <li><a href="#">Тема Львів</a></li>
+                    <li><a href="#">Тема Світ</a></li>
+                    <li><a href="#">Тема Кримінал</a></li>
+                    <li><a href="#">Тема Людина</a></li>
+                    <li><a href="#">Тема Спорт</a></li>
+                    <li><a href="#">Тема Влада</a></li>
+                    <li><a href="#">Тема НС</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </header>
+            <ul class="list_item_news_cat">
+                <li>
+                    <div class="img_news">
+                        <img src="img/analitic_news.png" alt="news" />
+                    </div>
+                    <div class="text">
+                        <h3><a href="#">Опозиція з наступного тижня починає проводити по всій Україні народні віче</a></h3>
+                        <div class="data">21 листопада, 13:30</div>
+                        <p>Спостерігач від Європейського парламенту за справами екс-прем’єра Юлії Тимошенко та екс-глави МВС Юрія Луценка президент Пет Кокс, скасувавши усі плани, вирушив до Києва.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_news">
+                        <img src="img/analitic_news.png" alt="news" />
+                    </div>
+                    <div class="text">
+                        <h3><a href="#">Опозиція з наступного тижня починає проводити по всій Україні народні віче</a></h3>
+                        <div class="data">21 листопада, 13:30</div>
+                        <p>Спостерігач від Європейського парламенту за справами екс-прем’єра Юлії Тимошенко та екс-глави МВС Юрія Луценка президент Пет Кокс, скасувавши усі плани, вирушив до Києва.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_news">
+                        <img src="img/analitic_news.png" alt="news" />
+                    </div>
+                    <div class="text">
+                        <h3><a href="#">Опозиція з наступного тижня починає проводити по всій Україні народні віче</a></h3>
+                        <div class="data">21 листопада, 13:30</div>
+                        <p>Спостерігач від Європейського парламенту за справами екс-прем’єра Юлії Тимошенко та екс-глави МВС Юрія Луценка президент Пет Кокс, скасувавши усі плани, вирушив до Києва.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_news">
+                        <img src="img/analitic_news.png" alt="news" />
+                    </div>
+                    <div class="text">
+                        <h3><a href="#">Опозиція з наступного тижня починає проводити по всій Україні народні віче</a></h3>
+                        <div class="data">21 листопада, 13:30</div>
+                        <p>Спостерігач від Європейського парламенту за справами екс-прем’єра Юлії Тимошенко та екс-глави МВС Юрія Луценка президент Пет Кокс, скасувавши усі плани, вирушив до Києва.</p>
+                    </div>
+                </li>
+                <li class="advertising">
+                    <!-- Advertising box -->
+                    <div class="advertising-min">
+                        <div class="title-advertising"><span>реклама</span></div>
+                        <div class="main-advertising">
+                            <img src="img/banner_480x60.jpg" alt="banner" />
+                        </div>
+                        <div class="more-information">
+                            <div class="link">
+                                <span class="left">Львів</span> <i></i>
+                                <div class="select_list_links">
+                                    <ul>
+                                        <li><a>Тернопіль</a></li>
+                                        <li><a>Чернівці</a></li>
+                                        <li><a>Київ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="more_info-text weather"><span>+5<sup>o</sup></span> <i></i></div>
+                        </div>
+                    </div>
+                    <!-- End Advertising box -->
+                    <div class="seperato_line"></div>
+                </li>
+                <li>
+                    <div class="img_news">
+                        <img src="img/analitic_news.png" alt="news" />
+                    </div>
+                    <div class="text">
+                        <h3><a href="#">Опозиція з наступного тижня починає проводити по всій Україні народні віче</a></h3>
+                        <div class="data">21 листопада, 13:30</div>
+                        <p>Спостерігач від Європейського парламенту за справами екс-прем’єра Юлії Тимошенко та екс-глави МВС Юрія Луценка президент Пет Кокс, скасувавши усі плани, вирушив до Києва.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_news">
+                        <img src="img/analitic_news.png" alt="news" />
+                    </div>
+                    <div class="text">
+                        <h3><a href="#">Опозиція з наступного тижня починає проводити по всій Україні народні віче</a></h3>
+                        <div class="data">21 листопада, 13:30</div>
+                        <p>Спостерігач від Європейського парламенту за справами екс-прем’єра Юлії Тимошенко та екс-глави МВС Юрія Луценка президент Пет Кокс, скасувавши усі плани, вирушив до Києва.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_news">
+                        <img src="img/analitic_news.png" alt="news" />
+                    </div>
+                    <div class="text">
+                        <h3><a href="#">Опозиція з наступного тижня починає проводити по всій Україні народні віче</a></h3>
+                        <div class="data">21 листопада, 13:30</div>
+                        <p>Спостерігач від Європейського парламенту за справами екс-прем’єра Юлії Тимошенко та екс-глави МВС Юрія Луценка президент Пет Кокс, скасувавши усі плани, вирушив до Києва.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_news">
+                        <img src="img/analitic_news.png" alt="news" />
+                    </div>
+                    <div class="text">
+                        <h3><a href="#">Опозиція з наступного тижня починає проводити по всій Україні народні віче</a></h3>
+                        <div class="data">21 листопада, 13:30</div>
+                        <p>Спостерігач від Європейського парламенту за справами екс-прем’єра Юлії Тимошенко та екс-глави МВС Юрія Луценка президент Пет Кокс, скасувавши усі плани, вирушив до Києва.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_news">
+                        <img src="img/analitic_news.png" alt="news" />
+                    </div>
+                    <div class="text">
+                        <h3><a href="#">Опозиція з наступного тижня починає проводити по всій Україні народні віче</a></h3>
+                        <div class="data">21 листопада, 13:30</div>
+                        <p>Спостерігач від Європейського парламенту за справами екс-прем’єра Юлії Тимошенко та екс-глави МВС Юрія Луценка президент Пет Кокс, скасувавши усі плани, вирушив до Києва.</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pagination">
+                <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                <li class="current"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li class="unavailable"><a href="">&hellip;</a></li>
+                <li><a href="">12</a></li>
+                <li><a href="">13</a></li>
+                <li class="arrow"><a href="">&raquo;</a></li>
+            </ul>
+        </aside>
+    </div>
+</section>
+<!-- Sidebar -->
+<aside class="large-4 columns colum_6_media right">
+<!-- Advertising box -->
+<div class="advertising_sidebar">
+    <div class="title-advertising"><span>реклама</span></div>
+    <div class="main-advertising">
+        <img src="img/banner_300x250.jpg" alt="banner" />
+    </div>
+</div>
+<!-- End Advertising box -->
+
+<div class="all_news">
+    <div class="list_typ_news">
+        <ul>
+            <li class="active"><a href="#"><span>останні</span></a></li>
+            <li><a href="#"><span>популярні</span></a></li>
+            <li><a href="#"><span>коментовані</span></a></li>
+            <li class="add_news"><a href="#">усі проекти</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="wrap_list_news">
+        <ul>
+            <li>
+                <div class="hour">
+                    <span>10:00</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Використання відеокамер на виборах не виправдало себе, – Комітет</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>11:00</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Львівська ОДА просить про фінансування реконструкції каналізації та очисних</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>12:40</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">На Львівщині 17-річний хлопець викрав у однолітка мотоцикл</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>13:10</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">У школах Львівщини пройде
+                        тиждень пам’яті жертв Голодомору і політрепресій</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>10:10</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">МВС відкрило 86 кримінальних справ через порушення на виборах</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>13:10</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">У школах Львівщини пройде
+                        тиждень пам’яті жертв Голодомору і політрепресій</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>11:00</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Опозиція не визнає результатів виборів, але працюватиме у ВРУ</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>12:45</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">У Борисполі затримали вантажника, який викрав гроші з сумки пасажира</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>13:10</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Гідрометцентр прогнозує поступове зниження температури впродовж 2 тижнів</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>13:10</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Гідрометцентр прогнозує поступове зниження температури впродовж 2 тижнів</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>14:15</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Індекс виробництва валової сільськогосподарської продукції Львівщини - 103,7% </a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>15:15</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">У Держказначействі запевнили, що загрози дефолту немає</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>16:15</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Меркель і Туск хочуть обговорити у Берліні українське питаннязагрозою:</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>17:45</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Гідрометцентр прогнозує поступове зниження температури впродовж 2 тижнів</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>14:15</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Індекс виробництва валової сільськогосподарської продукції Львівщини - 103,7% </a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>11:00</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Львівська ОДА просить про фінансування реконструкції каналізації та очисних</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>12:40</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">На Львівщині 17-річний хлопець викрав у однолітка мотоцикл</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>13:10</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">У школах Львівщини пройде
+                        тиждень пам’яті жертв Голодомору і політрепресій</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>10:10</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">МВС відкрило 86 кримінальних справ через порушення на виборах</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>11:00</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">Опозиція не визнає результатів виборів, але працюватиме у ВРУ</a>
+                </div>
+            </li>
+            <li>
+                <div class="hour">
+                    <span>12:45</span>
+                </div>
+                <div class="title_new">
+                    <a href="#">У Борисполі затримали вантажника, який викрав гроші з сумки пасажира</a>
+                </div>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="refresh">
+            <div class="link_refresh">
+                <i class="refresh_icon left"></i>
+                <span style="padding-left: 5px;">15:50 <i class="triangle"></i></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+</aside>
+<!-- End Main Content -->
+</div>
+
+<!-- End Main Content and Sidebar -->
+<div class="push"></div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <footer class="row">
+        <div class="large-12 columns">
+
+            <!-- Select region -->
+            <form class="custom expand change_region left">
+                <select id="region_select_footer">
+                    <option DISABLED>Виберіть регіон</option>
+                    <option>Львів</option>
+                    <option>Тернопіль</option>
+                    <option>Київ</option>
+                </select>
+            </form><!--END Select region -->
+
+            <!-- Select project chanel -->
+            <form class="custom expand change_project right">
+                <select id="select_project_chanel">
+                    <option>Проекти телеканалу</option>
+                    <option>Перший проект</option>
+                    <option>Другий проект</option>
+                    <option>Третій проект</option>
+                </select>
+            </form><!--END Select project chanel -->
+
+            <div class="row">
+                <div class="large-3 columns">
+                    <div class="large-5 columns">
+                        <div class="box-list_links hide-for-small">
+                            <header><h5>Новини</h5></header>
+                            <ul>
+                                <li><a href="#">Політика</a></li>
+                                <li><a href="#">Економіка</a></li>
+                                <li><a href="#">Кримінал</a></li>
+                                <li><a href="#">Спорт</a></li>
+                                <li><a href="#">Життя</a></li>
+                                <li><a href="#">Світ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="large-6 columns">
+                        <div class="box-list_links hide-for-small">
+                            <header><h5>Регіони</h5></header>
+                            <ul>
+                                <li><a href="#">Львів</a></li>
+                                <li><a href="#">Тернопіль</a></li>
+                                <li><a href="#">Чернівці</a></li>
+                                <li><a href="#">Івано-Франківськ</a></li>
+                                <li><a href="#">Луцьк</a></li>
+                                <li><a href="#">Ужгород</a></li>
+                                <li><a href="#">Рівне</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="large-5 columns">
+                        <div class="box-list_links links_white_under ">
+                            <ul>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Аналітика</a></li>
+                                <li><a href="#">Анонси</a></li>
+                                <li><a href="#">Чат-конференція</a></li>
+                                <li><a href="#">Опитування</a></li>
+                                <li><a href="#">Архів</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="large-6 columns hide-for-small">
+                        <div class="box-list_links">
+                            <header><h5>Мультимедіа</h5></header>
+                            <ul>
+                                <li><a href="#">Газета ZIK</a></li>
+                                <li><a href="#">Фотогалерея</a></li>
+                                <li><a href="#">Відео</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="large-8 large-offset-1 columns">
+                    <div class="large-12 columns hide-for-small">
+                        <div class="box-list_links">
+                            <header><h5>Телеканал ZIK</h5></header>
+                            <ul class="large-4 columns">
+                                <li><a href="#">101. Служба порятунку»</a></li>
+                                <li><a href="#">Без цензури. 5 хвилин правди»</a></li>
+                                <li><a href="#">Вільний мікрофон»</a></li>
+                                <li><a href="#">Доміно»</a></li>
+                                <li><a href="#">Здоров будь!»</a></li>
+                                <li><a href="#">Люстрація</a></li>
+                                <li><a href="#">НА!РОБОТУ</a></li>
+                            </ul>
+                            <ul class="large-4 columns">
+                                <li><a href="#">Народний контроль ZIK»</a></li>
+                                <li><a href="#">Незалежність. 20 років зблизька»</a></li>
+                                <li><a href="#">Об’єкт 2012. Уся правда про Євро!»</a></li>
+                                <li><a href="#">Огляд дня»»</a></li>
+                                <li><a href="#">Особистий прийом</a></li>
+                                <li><a href="#">Перевірка на вечірку»</a></li>
+                                <li><a href="#">Погляд на тиждень»</a></li>
+                            </ul>
+                            <ul class="large-4 columns">
+                                <li><a href="#">Погода»</a></li>
+                                <li><a href="#">ПРАВОкація»</a></li>
+                                <li><a href="#">Про Карпати</a></li>
+                                <li><a href="#">Прямим текстом</a></li>
+                                <li><a href="#">Хто тут живе?</a></li>
+                                <li><a href="#">Чвертка з паном Марциняком</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="large-12 columns">
+                        <div class="box-list_links media_efir">
+                            <header><h5>Ефір</h5></header>
+                            <ul class="large-2 columns">
+                                <li class="title">12 канал: будні</li>
+                                <li>04:00 - 06:00</li>
+                                <li>12:00 - 14:00</li>
+                                <li>21:00 - 24:00</li>
+                            </ul>
+                            <ul class="large-3 columns">
+                                <li class="title">12 канал: Вихідні та святкові</li>
+                                <li>02:00 - 08:00</li>
+                                <li>21:00 - 24:00</li>
+                            </ul>
+                            <ul class="large-7 columns">
+                                <li class="title">Цілодобово</li>
+                                <li>
+                                    У мережі кабельного телебачення Західного регіону<br/> України, Києва та Київської області.<br/>
+                                    Супутник AMOS 2 4W  частота - 11609.75 МГц.;<br/>
+                                    FEC 3/4; 3600 Ксимв./сек, поляризація горизонтальна.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="large-4 columns">
+            <div class="large-12 columns">
+                <p class="white">© 2004-2012 Західна інформаційна корпорація</p>
+
+                <p>За зміст рекламної інформації відповідальність несе рекламодавець.</p>
+            </div>
+        </div>
+        <div class="large-8 columns">
+            <div class="large-8 columns">
+                <p>Інформація «ЗІКу» є інтелектуальною власністю ТОВ «Західна інформаційна корпорація». За повного чи часткового використання текстів та зображень чи за будь-якого іншого поширення інформації «ЗІКу» гіперпосилання на сайт «Західної інформаційної корпорації» – www.zik.ua – є обов'язковим.</p>
+            </div>
+            <div class="large-3 columns">
+                <div class="count_site">
+                    <img src="img/bigmir.jpg" alt="bigmir" />
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    document.write('<script src=' +
+            ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+            '.js><\/script>')
+</script>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/foundation.min.js"></script>
+
+<script src="js/jquery.sidr.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script>
+    $(document).foundation();
+    $('#responsive-menu-button').sidr({
+        name: 'sidr-main',
+        source: '#navigation'
+    });
+    $(".wrap_list_news ul").mCustomScrollbar();
+
+    $(".toggle-topbar a").click(function(){
+        $(this).toggleClass("open");
+    });
+    /* Add class search box " open" */
+    $("#search_box").click(function(){
+        $(".search_box_media").toggleClass("open");
+    })
+</script>
+
+</body>
+</html>

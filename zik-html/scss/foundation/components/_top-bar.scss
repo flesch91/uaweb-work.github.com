@@ -139,17 +139,18 @@ $topbar-media-query: "only screen and (min-width:"#{810px}")" !default;
         }
       }
     }
+    a.open{color: $topbar-menu-link-color-toggled;}
   }
 
   // Change things up when the top-bar is expanded
-  &.expanded {
+/*  &.expanded {
     .toggle-topbar {
-      a { color: $topbar-menu-link-color-toggled;
+      a#responsive-menu-button { color: $topbar-menu-link-color-toggled;
         span {
         }
       }
     }
-  }
+  }*/
 
 }
 

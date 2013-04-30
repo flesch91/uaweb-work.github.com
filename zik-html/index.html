@@ -146,7 +146,15 @@
                             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
                             <div class="toggle-topbar menu-icon">
                                 <a href="#" class="left" id="responsive-menu-button"><span>Меню&nbsp;</span></a>
-                                <a href="#" id="search_box"><i></i></a>
+                                <a id="search_box"><i></i></a>
+                            </div>
+                            <div class="search_box_media">
+                                <!--Search-->
+                                <form class="search_form left">
+                                    <input type="text" id="search_input" class="c_search_input left" placeholder="Пошук" />
+                                    <a href="#" id="search_submit" class="c_search_submit left"></a>
+                                </form>
+                                <!--END Search-->
                             </div>
                             <!-- socil links -->
                             <div class="social_wrap right media_460">
@@ -806,17 +814,47 @@
                             <li class="active"><a href="#"><span>останні</span></a></li>
                             <li><a href="#"><span>популярні</span></a></li>
                             <li><a href="#"><span>коментовані</span></a></li>
-                            <li class="link">
+                            <li class="link" data-dropdown="all_project_video">
                                 <span class="left">усі проекти</span> <i></i>
-                                <div class="select_list_links">
+                                <div class="other_project_list_links">
+                                    <div class="row">
+                                        <div class="large-4 columns">
+                                            <ul>
+                                                <li><a href="#">Вільний мікрофон</a></li>
+                                                <li><a href="#">Здоров будь!</a></li>
+                                                <li><a href="#">Історична правда з Вахтангом Кіпіані</a></li>
+                                                <li><a href="#">Люстрація</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="large-4 columns">
+                                            <ul>
+                                                <li><a href="#">Народний контроль</a></li>
+                                                <li><a href="#">Огляд дня</a></li>
+                                                <li><a href="#">Погляд на тиждень</a></li>
+                                                <li><a href="#">ПРАВОкація</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="large-4 columns">
+                                            <ul>
+                                                <li><a href="#">Прямим текстом</a></li>
+                                                <li><a href="#">Перевірка на вечірку</a></li>
+                                                <li><a href="#">Погода</a></li>
+                                                <li><a href="#">Про Карпати</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="triangle"></div>
+                                </div>
+                                <!--<div class="select_list_links">
                                     <ul>
                                         <li><a href="#">Тест</a></li>
                                         <li><a href="#">Тест 2</a></li>
                                         <li><a href="#">Тест 3</a></li>
                                     </ul>
-                                </div>
+                                </div>-->
                             </li>
                         </ul>
+
                     </header>
                     <div class="slider_video-items">
                         <div class="arrow_left"></div>
@@ -1312,6 +1350,7 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/foundation.min.js"></script>
+
 <script src="js/jquery.sidr.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.min.js"></script>
   <script>
@@ -1321,6 +1360,14 @@
         source: '#navigation'
     });
     $(".wrap_list_news ul").mCustomScrollbar();
+
+    $(".toggle-topbar a").click(function(){
+        $(this).toggleClass("open");
+    });
+    /* Add class search box " open" */
+    $("#search_box").click(function(){
+        $(".search_box_media").toggleClass("open");
+    })
   </script>
 
 </body>

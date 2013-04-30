@@ -92,8 +92,21 @@
   background-color: $bg_color;
 }
 .m_top-25{margin-top: 25px}
+.m_right-50{margin-right: 50px}
 
 $Tahoma: Tahoma,Geneva,Kalimati,sans-serif;
+
+/**************
+  Typographija
+**************/
+aside header{
+  h4,h5,h6{
+    font-family: pf_dindisplay_promedium;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  h5{font-size: emCalc(16px)}
+}
 
 /********
   Header
@@ -190,8 +203,10 @@ header{margin-bottom: emCalc(16px)}
 *****************/
 .media_320{
   display: none !important;
-
-  @media only screen and (max-width: 459px){display: block !important;}
+  @media only screen and (max-width: 459px){
+    display: block !important;
+    margin: 0 !important;
+  }
 }
 
 /*******************
@@ -370,6 +385,7 @@ header{margin-bottom: emCalc(16px)}
     display: none;
     width: 42px;
     float: right;
+    cursor: pointer;
   i{
     background: url("../img/search_icon.png") center center no-repeat;
     width: 42px;
@@ -377,6 +393,26 @@ header{margin-bottom: emCalc(16px)}
     display: block;
   }
   @media only screen and (max-width: 606px){display: block}
+}
+
+// Box search media
+.search_box_media{
+  display: none;
+  background: #F3F3EF;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  border: 1px solid #E8E8E4;
+  top: 40px;
+  padding: 10px;
+  .search_form{
+    margin: 0 !important;
+    display: block !important;
+    .c_search_input{width: 150px}
+    .c_search_submit{height: 1.663em;}
+  }
+  &.open{display: block;}
 }
 /**************
   On air button
@@ -1158,6 +1194,7 @@ header{margin-bottom: emCalc(16px)}
 *****************/
 .wrap_video_slider{
   margin-bottom: 25px;
+  position: relative;
   header{
     h5{display: inline-block}
 
@@ -1188,7 +1225,6 @@ header{margin-bottom: emCalc(16px)}
       li.link{
           font-size: emCalc(11px);
           color: #006e97;
-          position: relative;
           margin-top: 5px;
           cursor: pointer;
 
@@ -1201,28 +1237,50 @@ header{margin-bottom: emCalc(16px)}
             margin-left: emCalc(5px);
           }
         /* Select list */
-          .select_list_links{
-            display: none;
-            margin-top: 20px;
+          .other_project_list_links{
+            position: absolute;
+            z-index: 2;
+            background: #2b2d31;
             width: 100%;
-            border: 1px solid #ddddd2;
+            height: 80%;
+            left: 0;
+            top: 44px;
+            padding: 15px 20px 16px;
+            display: none;
 
-            ul{margin: 0; padding: 0; background: #ffffff;}
-            ul li{float: inherit; list-style: none; margin: 0; height: inherit;}
-            ul li a{display: block; text-align: left; font-size: 10px; margin: 0; padding: 4px 5px; border-bottom: 1px solid #ddddd2}
-            ul li:last-child a{border-bottom: none}
-          }
-
-          &:hover{
-            .select_list_links{
+            ul{
+              background: url("../img/border_1px_silver.jpg") right top repeat-y;
+              margin: 0;
+              padding: 0;
+            }
+            ul.last{background: none}
+            ul li{
+              list-style: none;
+              padding: 0;
+              height: inherit;
+              line-height: 17px;
               display: block;
-              position: absolute;
-              z-index: 5;
+              float: inherit
+            }
+            a{
+              font-size: 11px;
+              color: #a9a9a9;
+              text-shadow: 0 -1px 1px #000000;
 
-              li:hover a{background: #006e97; color: #ffffff}
+              &:hover{color: #ffffff;}
+            }
+            .triangle{
+              @include  css-triangle(12px, #2a2c30, bottom);
+              position: absolute;
+              top: -24px;
+              right: 30px;
             }
           }
+          &:hover{.other_project_list_links{display: block}}
 
+          @media only screen and (max-width: 767px){
+            .large-4{width: 33.3333% !important;}
+          }
         }//Link < --
       }
     } //header <--
@@ -1367,7 +1425,7 @@ header{margin-bottom: emCalc(16px)}
 
       @include single-transition();
       ul{margin: 0; padding: 0; background: #ffffff;}
-      ul li{float: inherit; list-style: none; margin: 0; height: inherit;}
+      ul li{float: inherit; list-style: none; margin: 0; padding: 0; height: inherit;}
       ul li a{
         display: block;
         text-align: left;
@@ -1464,6 +1522,7 @@ header{margin-bottom: emCalc(16px)}
   @media only screen and (max-width: 955px){display: none}
 
 }
+.banner_top{@media only screen and (max-width: 955px){display: none}}
 
 /**********************
   9. box-news do not miss
@@ -1728,6 +1787,68 @@ header{margin-bottom: emCalc(16px)}
   }
 }
 
+
+/*************************
+  All thems news dropdown
+**************************/
+.all_thems_news_dropdown{
+  font-size: emCalc(11px);
+  color: #006e97;
+  margin-top: 8px;
+  cursor: pointer;
+
+  span{border-bottom: 1px dotted #006e97;}
+  i{
+    @include css-triangle(3px, #006e97, top);
+    display: block;
+    float: right;
+    margin-top: emCalc(9px);
+    margin-left: emCalc(5px);
+  }
+}
+#all_thems_news_dropdown{margin-top: 20px !important;}
+
+/********************
+  List item news cat
+********************/
+.list_item_news_cat{
+  &{margin: 0; padding: 0}
+  li{
+    list-style: none;
+    padding: 10px 0 5px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  /* Img news */
+  .img_news{
+    float: left;
+    width: 17.46031746%;
+  }
+
+  /* Text  */
+  .text{
+    padding-left: 20.634920634%;
+    h3{
+      margin: 0;
+      font-size: emCalc(16px);
+      line-height: 16px;
+      a{color: #0e4f67}
+    }
+    .data{
+      font-size: emCalc(10px);
+      color: #b4b2b2;
+      margin: 5px 0;
+      line-height: emCalc(15px);
+    }
+    p{color: #3d484d; font-size: emCalc(12px); line-height: 20px}
+  }
+  /* For advertising  */
+  .advertising{
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+}
 /*********
   Footer
 *********/
