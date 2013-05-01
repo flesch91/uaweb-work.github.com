@@ -5852,7 +5852,8 @@ ul.tabs_right {
   List cat news
 ***************/
 .cat_news {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  /* У нас в гостях були */ }
   .cat_news header {
     /* Top menu for video slider */ }
     .cat_news header h5 {
@@ -5975,6 +5976,22 @@ ul.tabs_right {
       margin-left: 2.00339%; }
     .cat_news .list_item_news_cat .img_true .text {
       padding-left: 20.6349%; }
+  .cat_news .guest_were .img_news {
+    width: 16.66667%;
+    margin-left: 0 !important;
+    margin-right: 3.96825%;
+    border-right: 1px solid #e0e0e0; }
+    @media only screen and (max-width: 955px) {
+      .cat_news .guest_were .img_news {
+        border-right: none; } }
+  .cat_news .guest_were .data {
+    display: block;
+    width: 100%;
+    float: inherit; }
+  .cat_news .guest_were .text {
+    float: left;
+    padding-left: 0 !important;
+    width: 79.36508%; }
 
 /*****************
   Sperator in text

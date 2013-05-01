@@ -2140,6 +2140,27 @@ ul.tabs_right{
       .text{padding-left: 20.6349%;}
     }
   }
+
+  /* У нас в гостях були */
+  .guest_were{
+    .img_news{
+      width: proc(630px, 105px);
+      margin-left: 0 !important;
+      margin-right: proc(630px,25px);
+      border-right: 1px solid #e0e0e0;
+      @media only screen and (max-width: 955px){border-right: none}
+    }
+    .data{
+      display: block;
+      width: 100%;
+      float: inherit
+    }
+    .text{
+      float: left;
+      padding-left: 0 !important;
+      width: proc(630px, 500px);
+    }
+  }
 }
 
 /*****************
