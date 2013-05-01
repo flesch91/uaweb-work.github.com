@@ -92,6 +92,7 @@
   background-color: $bg_color;
 }
 .m_top-25{margin-top: 25px}
+.m_bottom-25{margin-bottom: 25px}
 .m_right-50{margin-right: 50px}
 
 $Tahoma: Tahoma,Geneva,Kalimati,sans-serif;
@@ -838,7 +839,10 @@ header{margin-bottom: emCalc(16px)}
   }
   @media only screen and (max-width: 600px) {display: none !important;}
 }
-
+.large-4 .top-video-blok{
+  margin-bottom: 25px;
+  .btn-viwe-online{float: right; margin-top: 5px}
+}
 /*********************
  2. Analitic top list
 **********************/
@@ -918,7 +922,26 @@ header{margin-bottom: emCalc(16px)}
     }
   }
 }
-
+.typ_right_bar.analitic_top_list{
+  background: #f5f5f5;
+  padding: 0 5.4838709677% 20px;
+  margin-bottom: 13px;
+  header{
+    margin: 0 0 13px 0;
+    h5{
+      font-family: pf_dindisplay_promedium;
+      color: #3c3f45;
+      font-weight: normal;
+      font-size: emCalc(16px);
+      text-transform: uppercase;
+      margin: 0;
+      span{border-top: 3px solid #4fa6d6;}
+    }
+  }
+  .analitic_img{border-top: none}
+  li{margin-bottom: 13px;padding-bottom: 15px; border-bottom: 1px solid #eae8e8;}
+  li:last-child{margin-bottom: 0; border-bottom: none}
+}
 /***************
  3. Now channel
 ***************/
@@ -1604,10 +1627,10 @@ header{margin-bottom: emCalc(16px)}
 
     @media only screen and (max-width: 767px){width: 52.436%;}
   }
-  @media only screen and (max-width: 955px){display: none !important;}
+  @media only screen and (max-width: 955px){&.hide-main{display: none !important;}}
   @media only screen and (max-width: 460px){display: block !important;}
 }
-
+.large-4 .box-news_do_not_miss{margin-bottom: 25px}
 /*******************
   10.  Box news blog
 *******************/
@@ -1674,10 +1697,10 @@ header{margin-bottom: emCalc(16px)}
     @media only screen and (max-width: 320px){width: 75.436%;}
   }
 
-  @media only screen and (max-width: 954px){display: none !important;}
+  @media only screen and (max-width: 954px){&.hide-main{display: none !important;}}
   @media only screen and (max-width: 460px){display: block !important;}
 }
-
+.large-4 .box-list_blog{margin-bottom: 25px}
 /**********************
  11. Box announcements
 **********************/
@@ -1750,7 +1773,7 @@ header{margin-bottom: emCalc(16px)}
     @media only screen and (max-width: 767px){width: 76.436%;}
     @media only screen and (max-width: 320px){width: 73.436%;}
   }
-  @media only screen and (max-width: 955px){display: none !important;}
+  @media only screen and (max-width: 955px){&.hide-main{display: none !important;}}
   @media only screen and (max-width: 460px){display: block !important;}
 }
 /*******************
@@ -1819,6 +1842,7 @@ header{margin-bottom: emCalc(16px)}
     margin: 0 0 20px;
     border-bottom: 1px solid #eaeaea;
   }
+  li:last-child{border-bottom: none; margin-bottom: 0}
   /* Img news */
   .img_news{
     float: left;
@@ -1847,6 +1871,164 @@ header{margin-bottom: emCalc(16px)}
     padding: 0;
     margin: 0;
     border: none;
+  }
+}
+
+/******************
+  wrap list region
+*******************/
+.wrap_list_region{
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: emCalc(16px);
+  ul{margin: 0; padding: 0}
+  li{margin: 0}
+  a{
+    font-family: Arial,sans-serif;
+    font-size: emCalc(14px);
+    color: #006e97;
+    padding: emCalc(5px) emCalc(10px);
+  }
+  li.act a{
+    background: #006f98;
+    color: #fff;
+  }
+}
+
+/***************
+  List cat news
+***************/
+.cat_news{
+  margin-bottom: 25px;
+  header{
+    h5{display: inline-block; font-weight: normal}
+
+    /* Top menu for video slider */
+    ul.tabs_right{
+      margin: 0;
+      padding: 0;
+      li{
+        list-style: none;
+        margin: 0 6px;
+        float: left;
+        height: emCalc(29px);
+      }
+      a{
+        text-align: center;
+        font-size: emCalc(11px);
+        color: #999999;
+      }
+      a:hover{
+        color: #000000;
+      }
+      /*  Active   */
+      li.active a{color: #000000}
+      li.active{
+        background: url("../img/top_border_for_inks.jpg") left top repeat-x;
+      }
+
+      li.link{
+        font-size: emCalc(11px);
+        color: #006e97;
+        margin-top: 5px;
+        cursor: pointer;
+
+        span{border-bottom: 1px dotted #006e97;}
+        i{
+          @include css-triangle(3px, #006e97, top);
+          display: block;
+          float: right;
+          margin-top: emCalc(9px);
+          margin-left: emCalc(5px);
+        }
+        /* Select list */
+        .other_project_list_links{
+          position: absolute;
+          z-index: 2;
+          background: #2b2d31;
+          width: 100%;
+          height: 80%;
+          left: 0;
+          top: 44px;
+          padding: 15px 20px 16px;
+          display: none;
+
+          ul{
+            background: url("../img/border_1px_silver.jpg") right top repeat-y;
+            margin: 0;
+            padding: 0;
+          }
+          ul.last{background: none}
+          ul li{
+            list-style: none;
+            padding: 0;
+            height: inherit;
+            line-height: 17px;
+            display: block;
+            float: inherit
+          }
+          a{
+            font-size: 11px;
+            color: #a9a9a9;
+            text-shadow: 0 -1px 1px #000000;
+
+            &:hover{color: #ffffff;}
+          }
+          .triangle{
+            @include  css-triangle(12px, #2a2c30, bottom);
+            position: absolute;
+            top: -24px;
+            right: 30px;
+          }
+        }
+        &:hover{.other_project_list_links{display: block}}
+
+        @media only screen and (max-width: 767px){
+          .large-4{width: 33.3333% !important;}
+        }
+      }//Link < --
+    }
+  } //header <--
+
+  .list_item_news_cat{
+    .wrap_news{
+      width: 93.65079%;
+      float: left;
+    }
+    .border-left{
+      padding-left: 2.003389%;
+      border-left:1px solid #e0e0e0;
+
+      /*  Media  */
+      @media only screen and (max-width: 945px){border-left: none}
+    }
+    /* Data new */
+    .data{
+      color: #b4b2b2;
+      font-size: emCalc(10px);
+      float: left;
+      width: 6.3492%;
+
+      /*  Media  */
+      @media only screen and (max-width: 945px){
+        width: inherit;
+        margin-left: 2.00339%;
+        margin-bottom: 5px;
+      }
+    }
+    /* Text news*/
+    .text{
+      padding-left: 0;
+      h3{
+        margin-bottom: 5px
+      }
+      p{line-height: 16px}
+    }
+
+    /* Img true   */
+    .img_true{
+      .img_news{margin-left: 2.00339%}
+      .text{padding-left: 20.6349%;}
+    }
   }
 }
 /*********

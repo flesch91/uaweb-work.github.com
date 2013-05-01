@@ -14,9 +14,9 @@ $pagination-li-font-size:                emCalc(14px) !default;
 $pagination-li-margin:                   emCalc(5px) !default;
 
 // We use these for the pagination anchor links
-$pagination-link-pad:                    emCalc(1px) emCalc(7px) emCalc(1px) !default;
+$pagination-link-pad:                    0.425em 0.425em 0 !default;
 $pagination-link-font-color:             #999 !default;
-$pagination-link-active-bg:              darken(#fff, 10%) !default;
+$pagination-link-active-color:           #333 !default;
 
 // We use these for disabled anchor links
 $pagination-link-unavailable-cursor:     default !default;
@@ -24,9 +24,9 @@ $pagination-link-unavailable-font-color: #999 !default;
 $pagination-link-unavailable-bg-active:  transparent !default;
 
 // We use these for currently selected anchor links
-$pagination-link-current-background:     $primary-color !default;
-$pagination-link-current-font-color:     #fff !default;
-$pagination-link-current-font-weight:    bold !default;
+$pagination-link-current-background:     #fff !default;
+$pagination-link-current-font-color:     #333 !default;
+$pagination-link-current-font-weight:    normal !default;
 $pagination-link-current-cursor:         default !default;
 $pagination-link-current-active-bg:      $primary-color !default;
 
@@ -41,11 +41,10 @@ $pagination-link-current-active-bg:      $primary-color !default;
     display: block;
     height: $pagination-height;
     margin-#{$default-float}: $pagination-margin;
-
+    border-top: 1px solid #ededed;
     li {
       display: block;
       float: $pagination-li-float;
-      height: $pagination-li-height;
       color: $pagination-li-font-color;
       font-size: $pagination-li-font-size;
       margin-#{$default-float}: $pagination-li-margin;
@@ -54,10 +53,11 @@ $pagination-link-current-active-bg:      $primary-color !default;
         display: block;
         padding: $pagination-link-pad;
         color: $pagination-link-font-color;
+        border-top: 3px solid transparent;
       }
 
       &:hover a,
-      a:focus { background: $pagination-link-active-bg; }
+      a:focus { color: $pagination-link-active-color; }
 
       &.unavailable a {
         cursor: $pagination-link-unavailable-cursor;
@@ -67,12 +67,12 @@ $pagination-link-current-active-bg:      $primary-color !default;
       &.unavailable:hover a, &.unavailable a:focus { background: $pagination-link-unavailable-bg-active; }
 
       &.current a {
-        background: $pagination-link-current-background;
+        border-top: 3px solid #4fa6d6;
+        //background: url("../img/top_border_for_inks.jpg") repeat-x scroll left top transparent;
         color: $pagination-link-current-font-color;
         font-weight: $pagination-link-current-font-weight;
         cursor: $pagination-link-current-cursor;
 
-        &:hover,
         &:focus { background: $pagination-link-current-active-bg; }
       }
     }
