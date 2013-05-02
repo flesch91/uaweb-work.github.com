@@ -3788,6 +3788,9 @@ table {
 .m_bottom-35 {
   margin-bottom: 35px !important; }
 
+.m_right-10 {
+  margin-right: 10px !important; }
+
 .m_right-50 {
   margin-right: 50px !important; }
 
@@ -6112,6 +6115,106 @@ ul.tabs_right {
       float: inherit;
       margin-bottom: 5px;
       width: 100%; } }
+
+/**************************
+  info-wrap-cat-view-comme
+***************************/
+.info-wrap-cat-view-comme {
+  color: #999999;
+  border-bottom: 1px solid #f5f5f5; }
+  .info-wrap-cat-view-comme h5 {
+    font-family: pf_dindisplay_promedium;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #006699;
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 0.6875em;
+    margin-right: 15px; }
+  .info-wrap-cat-view-comme i {
+    background: url("../img/icon_data_view_comm.png") left top no-repeat;
+    width: 8px;
+    height: 8px;
+    display: block;
+    float: left;
+    margin-right: 8px; }
+  .info-wrap-cat-view-comme .post-data {
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-size: 0.6875em; }
+    .info-wrap-cat-view-comme .post-data i {
+      background-position: 0 0; }
+  .info-wrap-cat-view-comme .post-view {
+    margin-top: 10px;
+    float: left;
+    font-size: 0.6875em;
+    margin-right: 15px; }
+    .info-wrap-cat-view-comme .post-view i {
+      background-position: -8px -7px; }
+  .info-wrap-cat-view-comme .post-comment {
+    margin-top: 10px;
+    float: left;
+    font-size: 0.6875em; }
+    .info-wrap-cat-view-comme .post-comment i {
+      background-position: -16px -13px; }
+
+/******************
+  Share social post
+*******************/
+.share_social_post {
+  margin: 0.625em 0; }
+  .share_social_post ul {
+    margin: 0;
+    padding: 0; }
+  .share_social_post ul li {
+    float: left;
+    list-style: none; }
+
+/***********************
+  Font size box for post
+************************/
+.font-size {
+  font-size: 0.8125em;
+  margin-top: 15px;
+  color: #999; }
+  .font-size .min-font,
+  .font-size .max-font {
+    margin-top: 5px;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer; }
+
+.icon-print {
+  background: url("../img/icon_print.png") left top no-repeat;
+  width: 19px;
+  height: 20px;
+  display: block;
+  float: right;
+  cursor: pointer; }
+
+/**********
+  FOR POST
+***********/
+.post-full h1, .post-full h2, .post-full h3, .post-full h4, .post-full h5, .post-full h6 {
+  font-family: Tahoma, Geneva, Kalimati, sans-serif;
+  font-weight: normal; }
+.post-full h1 {
+  font-size: 1.875em; }
+.post-full h2 {
+  font-size: 1.5625em; }
+.post-full h3 {
+  font-size: 1.25em; }
+.post-full h4 {
+  font-size: 0.9375em; }
+.post-full h5 {
+  font-size: 0.625em; }
+.post-full h6 {
+  font-size: 0.3125em; }
+.post-full p {
+  font-family: Georgia, serif; }
+.post-full .img-post {
+  width: 47.61905%; }
 
 /*********
   Footer
