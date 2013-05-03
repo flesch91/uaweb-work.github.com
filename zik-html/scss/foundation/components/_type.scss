@@ -66,10 +66,11 @@ $definition-list-header-margin-bottom: .3em !default;
 $definition-list-margin-bottom:        emCalc(12px) !default;
 
 // We use these to style blockquotes
-$blockquote-font-color:                lighten($header-font-color, 30%) !default;
-$blockquote-padding:                   emCalc(9px) emCalc(20px) 0 emCalc(19px) !default;
-$blockquote-border:                    1px solid #ddd !default;
-$blockquote-cite-font-size:            emCalc(13px) !default;
+$blockquote-font-color:                #006e97 !default;
+$blockquote-padding:                   emCalc(9px) 0 emCalc(9px) emCalc(30px) !default;
+$blockquote-margin:                    emCalc(5px) emCalc(20px) 0 0 !default;
+$blockquote-border:                    1px solid #f5f5f5 !default;
+$blockquote-cite-font-size:            emCalc(16px) !default;
 $blockquote-cite-font-color:           lighten($header-font-color, 20%) !default;
 $blockquote-cite-link-color:           $blockquote-cite-font-color !default;
 
@@ -299,9 +300,13 @@ abbr {
 
 /* Blockquotes */
 blockquote {
+  background: url("../img/sbquo_cite.png") left emCalc(14px) no-repeat;
   margin: 0 0 $paragraph-margin-bottom;
   padding: $blockquote-padding;
-  border-#{$default-float}: $blockquote-border;
+  margin: $blockquote-margin;
+  font-style: italic;
+  border-top: $blockquote-border;
+  border-bottom: $blockquote-border;
 
   cite {
     display: block;
