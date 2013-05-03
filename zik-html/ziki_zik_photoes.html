@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ZIK.UA</title>
+    <link rel="stylesheet" href="css/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Sidebar menu responsive -->
+    <link rel="stylesheet" href="css/jquery.sidr.dark.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <script src="js/vendor/custom.modernizr.js"></script>
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="css/ie8_grid.css" />
+    <![endif]-->
+    <!--[if gte IE 9]>
+
+    <style type="text/css">
+        .gradient,
+        .now_channel li.act,
+        .wrap_video_slider.video-item.title{
+            filter: none;
+        }
+    </style>
+
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="black-line">
+        <div class="row">
+            <div class="logo">
+                <a href="#"><img src="img/logo.jpg" alt="Zik"/></a>
+            </div>
+            <div class="large-10 large-offset-2 columns">
+                <a href="#" class="btn_on_air gradient media_320"><span>ефір телеканалу</span><i></i></a>
+                <div class="sponsors">
+                    <div class="sponsors_list">
+                        <a href="#"><img src="img/sponsor/ohljad.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/narodnyj_control.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/istorychna_pravds.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/lystracija.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/pravo_cacija.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/pohljad.png" alt="sponsor"/></a>
+                        <a href="#"><img src="img/sponsor/pro_karpaty.png" alt="sponsor"/></a>
+                    </div>
+                </div>
+                <div class="other_project right">
+                    <div class="link"><span class="left">інші проекти</span> <i></i></div>
+                    <div class="other_project_list_links">
+                        <div class="row">
+                            <div class="large-4 columns">
+                                <ul>
+                                    <li><a href="#">Вільний мікрофон</a></li>
+                                    <li><a href="#">Здоров будь!</a></li>
+                                    <li><a href="#">Історична правда з Вахтангом Кіпіані</a></li>
+                                    <li><a href="#">Люстрація</a></li>
+                                </ul>
+                            </div>
+                            <div class="large-2 columns">
+                                <ul>
+                                    <li><a href="#">Народний контроль</a></li>
+                                    <li><a href="#">Огляд дня</a></li>
+                                    <li><a href="#">Погляд на тиждень</a></li>
+                                    <li><a href="#">ПРАВОкація</a></li>
+                                </ul>
+                            </div>
+                            <div class="large-2 columns">
+                                <ul>
+                                    <li><a href="#">Прямим текстом</a></li>
+                                    <li><a href="#">Перевірка на вечірку</a></li>
+                                    <li><a href="#">Погода</a></li>
+                                    <li><a href="#">Про Карпати</a></li>
+                                </ul>
+                            </div>
+                            <div class="large-4 columns">
+                                <ul class="last">
+                                    <li><a href="#">Твоє бачення</a></li>
+                                    <li><a href="#">Чвертка з паном Марциняком</a></li>
+                                    <li><a href="#">101. Служба порятунку</a></li>
+                                    <li><a href="#">Інші проекти</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow_black_line"></div>
+    </div>
+    <div class="dark-gray-line">
+        <div class="row">
+            <div class="large-10 large-offset-2 columns">
+                <!-- Select region -->
+                <form class="custom expand change_region left">
+                    <select id="region_select">
+                        <option DISABLED>Виберіть регіон</option>
+                        <option>Львів</option>
+                        <option>Тернопіль</option>
+                        <option>Київ</option>
+                    </select>
+                </form><!--END Select region -->
+
+                <!-- List links top -->
+                <div class="list_links-top left">
+                    <ul>
+                        <li><a href="#">Телепроекти</a></li>
+                        <li><a href="#">Анонси</a></li>
+                        <li><a href="#">Чати</a></li>
+                        <li><a href="#">Архів</a></li>
+                    </ul>
+                </div><!--END List links top -->
+
+                <!--Change language-->
+                <form class="custom expand change_lang left">
+                    <select id="lang_select">
+                        <option>Укр</option>
+                        <option>Рус</option>
+                        <option>Eng</option>
+                    </select>
+                </form><!--END Change language-->
+
+                <!--Search-->
+                <form class="search_form left">
+                    <input type="text" id="search_input" class="c_search_input left" placeholder="Пошук" />
+                    <a href="#" id="search_submit" class="c_search_submit left"></a>
+                </form>
+                <!--END Search-->
+
+                <a href="#" class="btn_on_air gradient"><span>ефір телеканалу</span><i></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="light-gray-line">
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="top-menu">
+                    <nav class="top-bar">
+                        <div class="title-area">
+                            <!-- Title Area -->
+                            <div class="name"></div>
+                            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                            <div class="toggle-topbar menu-icon">
+                                <a href="#" class="left" id="responsive-menu-button"><span>Меню&nbsp;</span></a>
+                                <a id="search_box"><i></i></a>
+                            </div>
+                            <div class="search_box_media">
+                                <!--Search-->
+                                <form class="search_form left">
+                                    <input type="text" class="c_search_input left" placeholder="Пошук" />
+                                    <a href="#" class="c_search_submit left"></a>
+                                </form>
+                                <!--END Search-->
+                            </div>
+                            <!-- socil links -->
+                            <div class="social_wrap right media_460">
+                                <ul>
+                                    <li class="facebook"><a href="#"></a></li>
+                                    <li class="twitter"><a href="#"></a></li>
+                                    <li class="linkedin"><a href="#"></a></li>
+                                    <li class="youtube"><a href="#"></a></li>
+                                    <li class="rss"><a href="#"></a></li>
+                                    <li class="mail"><a href="#"></a></li>
+                                    <li class="phone"><a href="#"></a></li>
+                                </ul>
+                            </div><!--END socil links -->
+                        </div>
+                        <!-- Drobdown search-->
+                        <section class="top-bar-section">
+                            <!-- Right Nav Section -->
+                            <div id="navigation">
+                                <ul class="right">
+                                    <li><a href="#">Новини</a></li>
+                                    <li class="active"><a href="#">Західна Україна</a></li>
+                                    <li><a href="#">Влада</a></li>
+                                    <li><a href="#">Економіка</a></li>
+                                    <li><a href="#">Кримінал</a></li>
+                                    <li><a href="#">Спорт</a></li>
+                                    <li><a href="#">Людина</a></li>
+                                    <li><a href="#">Світ</a></li>
+                                    <li><a href="#">Аналітика</a></li>
+                                    <li><a href="#">Фото</a></li>
+                                    <li><a href="#">Відео</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="wrap_site">
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="banner_top">
+            <a href="#">реклама</a>
+            <img src="img/baner.jpg" alt="banner">
+        </div>
+    </div>
+</div>
+<div class="row">
+<!-- Main Blog Content -->
+<section>
+    <div class="large-8 columns colum_6_media" role="content">
+
+        <!-- foto-post-news -->
+        <div class="foto-post-news m_bottom-25 photos_page_hiden">
+            <div class="box_more-category">
+                <article>
+                    <header><h5>Репортаж</h5></header>
+                    <div class="wrap_more-category">
+                        <div class="arrow_left"></div>
+                        <div class="wrap_list_item">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="hidden_fix"><img src="img/foto_post_1.jpg" alt="post foto 1" /></div>
+                                        <div class="title">Озеро у Стрийському парку Львова обіцяють очистити до кінця тижня</div>
+                                    </a>
+                                </li>
+                                <li class="center-photo">
+                                    <a href="#">
+                                        <div class="hidden_fix"><img src="img/foto_post_2.jpg" alt="post foto 2" /></div>
+                                        <div class="title">Причетність українців до вбивства польських учених – міф, – Бобало</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="hidden_fix"><img src="img/foto_post_3.jpg" alt="post foto 1" /></div>
+                                        <div class="title">Ідола з Нацмузею у Львові не знищили, а акуратно розібрали</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="hidden_fix"><img src="img/foto_post_3.jpg" alt="post foto 1" /></div>
+                                        <div class="title">Ідола з Нацмузею у Львові не знищили, а акуратно розібрали</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="hidden_fix"><img src="img/foto_post_3.jpg" alt="post foto 1" /></div>
+                                        <div class="title">Ідола з Нацмузею у Львові не знищили, а акуратно розібрали</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="hidden_fix"><img src="img/foto_post_3.jpg" alt="post foto 1" /></div>
+                                        <div class="title">Ідола з Нацмузею у Львові не знищили, а акуратно розібрали</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="hidden_fix"><img src="img/foto_post_3.jpg" alt="post foto 1" /></div>
+                                        <div class="title">Ідола з Нацмузею у Львові не знищили, а акуратно розібрали</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="arrow_right"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </article>
+            </div>
+        </div><!--END foto-post-news -->
+        <div class="row">
+        <div class="photos_list">
+            <ul>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="large-4 columns">
+                    <div class="photo_img">
+                        <img src="img/page_photo.jpg" alt="photo" />
+                        <div class="caption">12</div>
+                    </div>
+                    <a href="#" class="title">Західна преса переважно критично оцінила перебіг і результати парламентських виборів</a>
+                    <div class="data">21 листопада, 13:30</div><div class="post-comment"><i></i> 12</div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        </div>
+
+        <ul class="pagination">
+            <li class="current"><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li class="unavailable"><a href="">&hellip;</a></li>
+            <li><a href="">12</a></li>
+            <li><a href="">13</a></li>
+        </ul>
+
+    </div>
+</section>
+<!-- Sidebar -->
+<aside class="large-4 columns colum_6_media right">
+<div class="clearfix"></div>
+<!-- Advertising box -->
+<div class="advertising_sidebar">
+    <div class="title-advertising"><span>реклама</span></div>
+    <div class="main-advertising">
+        <img src="img/banner_300x250.jpg" alt="banner" />
+    </div>
+</div>
+<!-- End Advertising box -->
+<!-- Analitiks -->
+<div class="typ_right_bar analitic_top_list">
+    <article>
+        <header><h5><span>Аналітика</span></h5></header>
+        <ul>
+            <li>
+                <div class="analitic_img">
+                    <div class="hidden_fix"><img src="img/analitic_img.jpg" alt="analitic_img" /></div>
+                </div>
+                <div class="analitic_link">
+                    <a href="#">Жодного працівника швидкої меддопомоги не скоротять</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="analitic_text">
+                    <p>Швидка медична допомога в Україні – це служба, де всі проблеми проявляються</p>
+                    <div class="analitic_data">21 листопада, 13:30</div>
+                </div>
+            </li>
+            <li>
+                <div class="analitic_img">
+                    <div class="hidden_fix"><img src="img/analitic_img_2.jpg" alt="analitic_img" /></div>
+                </div>
+                <div class="analitic_link">
+                    <a href="#">Слідство веде Google.com</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="analitic_text">
+                    <p>Західна преса переважно критично оцінила перебіг і результати парламентських виборів</p>
+                    <div class="analitic_data">21 листопада, 13:30</div>
+                </div>
+            </li>
+            <li>
+                <div class="analitic_img">
+                    <div class="hidden_fix"><img src="img/analitic_img_3.jpg" alt="analitic_img" /></div>
+                </div>
+                <div class="analitic_link">
+                    <a href="#">Як програти вибори на Львівщині</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="analitic_text">
+                    <p>Західна преса переважно критично оцінила перебіг і результати парламентських виборів</p>
+                    <div class="analitic_data">21 листопада, 13:30</div>
+                </div>
+            </li>
+        </ul>
+    </article>
+</div>
+<!--END Analitiks -->
+<div class="seperato_line"></div>
+
+    <!-- Do not miss -->
+<div class="box-news_do_not_miss">
+    <article>
+        <header><h5><span>Не пропустіть</span></h5></header>
+        <ul>
+            <li>
+                <div class="box_more-img video">
+                    <div class="b-icon-tr"><i></i></div>
+                    <img src="img/box-img_categorry.jpg" alt="category_img" />
+                </div>
+                <div class="box_more-link">
+                    <a href="#">«Погляд на тиждень». «Зміни грядуть. Прокурор замінив залізничника у кріслі голови області і </a>
+                    <span class="box_more-data">21.11.2012, субота, 13:30</span>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <div class="box_more-img video">
+                    <div class="b-icon-tr"><i></i></div>
+                    <img src="img/box-img_categorry_3.jpg" alt="category_img" />
+                </div>
+                <div class="box_more-link">
+                    <a href="#">«ПРАВОкація». «Ювенальна юстиція – частина друга»</a>
+                    <span class="box_more-data">21.11.2012, субота, 13:30</span>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <div class="box_more-img video">
+                    <div class="b-icon-tr"><i></i></div>
+                    <img src="img/box-img_categorry_2.jpg" alt="category_img" />
+                </div>
+                <div class="box_more-link">
+                    <a href="#">«Погляд на тиждень». «Зміни грядуть. Прокурор замінив залізничника у кріслі голови області і </a>
+                    <span class="box_more-data">21.11.2012, субота, 13:30</span>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+    </article>
+</div>
+<!--END Do not miss -->
+
+<!-- Blog list -->
+<div class="box-list_blog">
+    <article>
+        <header><h5><span>Блоги</span></h5></header>
+        <ul>
+            <li>
+                <div class="box_more-img">
+                    <img src="img/ava50x50.jpg" alt="ava" />
+                </div>
+                <div class="box_more-link">
+                    <a href="#" class="name_b">Дмитро Добродомов</a>
+                    <a href="#" class="blog_text">Держслужбовців запитують: «Для кого вони працюють?»</a>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <div class="box_more-img">
+                    <img src="img/ava50x50_ty2.jpg" alt="ava" />
+                </div>
+                <div class="box_more-link">
+                    <a href="#" class="name_b">Ірина Венгкр</a>
+                    <a href="#" class="blog_text">Подорож у тисячу кілометрів</a>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <div class="box_more-img">
+                    <img src="img/ava50x50_ty3.jpg" alt="ava" />
+                </div>
+                <div class="box_more-link">
+                    <a href="#" class="name_b">Ольга Мовчан</a>
+                    <a href="#" class="blog_text">Хто пересадив польських посадовців на «Шкоди»? перше рельне шоу «На!Роботу»</a>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+    </article>
+</div>
+<!--END Blog list -->
+
+<!-- Announcements -->
+<div class="box-announcements">
+    <article>
+        <header><h5><span>Анонси</span></h5></header>
+        <ul>
+            <li>
+                <div class="box_more-data">
+                    <span>21</span>
+                    Лист
+                    13:30
+                </div>
+                <div class="box_more-link">
+                    <a href="#">Брифінг на тему: «Які українські книги для бібліотек закуповує влада Львівщини за бюджетні кошти?».</a>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <div class="box_more-data">
+                    <span>21</span>
+                    Лист
+                    13:30
+                </div>
+                <div class="box_more-link">
+                    <a href="#">Брифінг на тему: «Які українські книги для бібліотек закуповує влада Львівщини за бюджетні кошти?».</a>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <div class="box_more-data">
+                    <span>21</span>
+                    Лист
+                    13:30
+                </div>
+                <div class="box_more-link">
+                    <a href="#">«Літературна кава по-львівськи». Презентація книги Оксани Сайко «Новенька та інші історії».</a>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+    </article>
+</div>
+<!--END Announcements -->
+</aside>
+<!-- End Main Content -->
+<div class="large-8 columns colum_8_media">
+    <!-- foto-post-news -->
+    <div class="foto-post-news m_bottom-25 photos_page">
+        <div class="seperato_line"></div>
+        <div class="box_more-category">
+            <article>
+                <header><h5>Репортаж</h5></header>
+                <div class="wrap_more-category">
+                    <div class="arrow_left"></div>
+                    <div class="wrap_list_item">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="hidden_fix"><img src="img/foto_post_1.jpg" alt="post foto 1" /></div>
+                                    <div class="title">Озеро у Стрийському парку Львова обіцяють очистити до кінця тижня</div>
+                                </a>
+                            </li>
+                            <li class="center-photo">
+                                <a href="#">
+                                    <div class="hidden_fix"><img src="img/foto_post_2.jpg" alt="post foto 2" /></div>
+                                    <div class="title">Причетність українців до вбивства польських учених – міф, – Бобало</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="hidden_fix"><img src="img/foto_post_3.jpg" alt="post foto 1" /></div>
+                                    <div class="title">Ідола з Нацмузею у Львові не знищили, а акуратно розібрали</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="hidden_fix"><img src="img/foto_post_3.jpg" alt="post foto 1" /></div>
+                                    <div class="title">Ідола з Нацмузею у Львові не знищили, а акуратно розібрали</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="hidden_fix"><img src="img/foto_post_3.jpg" alt="post foto 1" /></div>
+                                    <div class="title">Ідола з Нацмузею у Львові не знищили, а акуратно розібрали</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="hidden_fix"><img src="img/foto_post_3.jpg" alt="post foto 1" /></div>
+                                    <div class="title">Ідола з Нацмузею у Львові не знищили, а акуратно розібрали</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="hidden_fix"><img src="img/foto_post_3.jpg" alt="post foto 1" /></div>
+                                    <div class="title">Ідола з Нацмузею у Львові не знищили, а акуратно розібрали</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="arrow_right"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </article>
+        </div>
+    </div><!--END foto-post-news -->
+
+</div>
+</div>
+
+<!-- End Main Content and Sidebar -->
+<div class="push"></div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <footer class="row">
+        <div class="large-12 columns">
+
+            <!-- Select region -->
+            <form class="custom expand change_region left">
+                <select id="region_select_footer">
+                    <option DISABLED>Виберіть регіон</option>
+                    <option>Львів</option>
+                    <option>Тернопіль</option>
+                    <option>Київ</option>
+                </select>
+            </form><!--END Select region -->
+
+            <!-- Select project chanel -->
+            <form class="custom expand change_project right">
+                <select id="select_project_chanel">
+                    <option>Проекти телеканалу</option>
+                    <option>Перший проект</option>
+                    <option>Другий проект</option>
+                    <option>Третій проект</option>
+                </select>
+            </form><!--END Select project chanel -->
+
+            <div class="row">
+                <div class="large-3 columns">
+                    <div class="large-5 columns">
+                        <div class="box-list_links hide-for-small">
+                            <header><h5>Новини</h5></header>
+                            <ul>
+                                <li><a href="#">Політика</a></li>
+                                <li><a href="#">Економіка</a></li>
+                                <li><a href="#">Кримінал</a></li>
+                                <li><a href="#">Спорт</a></li>
+                                <li><a href="#">Життя</a></li>
+                                <li><a href="#">Світ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="large-6 columns">
+                        <div class="box-list_links hide-for-small">
+                            <header><h5>Регіони</h5></header>
+                            <ul>
+                                <li><a href="#">Львів</a></li>
+                                <li><a href="#">Тернопіль</a></li>
+                                <li><a href="#">Чернівці</a></li>
+                                <li><a href="#">Івано-Франківськ</a></li>
+                                <li><a href="#">Луцьк</a></li>
+                                <li><a href="#">Ужгород</a></li>
+                                <li><a href="#">Рівне</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="large-5 columns">
+                        <div class="box-list_links links_white_under ">
+                            <ul>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Аналітика</a></li>
+                                <li><a href="#">Анонси</a></li>
+                                <li><a href="#">Чат-конференція</a></li>
+                                <li><a href="#">Опитування</a></li>
+                                <li><a href="#">Архів</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="large-6 columns hide-for-small">
+                        <div class="box-list_links">
+                            <header><h5>Мультимедіа</h5></header>
+                            <ul>
+                                <li><a href="#">Газета ZIK</a></li>
+                                <li><a href="#">Фотогалерея</a></li>
+                                <li><a href="#">Відео</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="large-8 large-offset-1 columns">
+                    <div class="large-12 columns hide-for-small">
+                        <div class="box-list_links">
+                            <header><h5>Телеканал ZIK</h5></header>
+                            <ul class="large-4 columns">
+                                <li><a href="#">101. Служба порятунку»</a></li>
+                                <li><a href="#">Без цензури. 5 хвилин правди»</a></li>
+                                <li><a href="#">Вільний мікрофон»</a></li>
+                                <li><a href="#">Доміно»</a></li>
+                                <li><a href="#">Здоров будь!»</a></li>
+                                <li><a href="#">Люстрація</a></li>
+                                <li><a href="#">НА!РОБОТУ</a></li>
+                            </ul>
+                            <ul class="large-4 columns">
+                                <li><a href="#">Народний контроль ZIK»</a></li>
+                                <li><a href="#">Незалежність. 20 років зблизька»</a></li>
+                                <li><a href="#">Об’єкт 2012. Уся правда про Євро!»</a></li>
+                                <li><a href="#">Огляд дня»»</a></li>
+                                <li><a href="#">Особистий прийом</a></li>
+                                <li><a href="#">Перевірка на вечірку»</a></li>
+                                <li><a href="#">Погляд на тиждень»</a></li>
+                            </ul>
+                            <ul class="large-4 columns">
+                                <li><a href="#">Погода»</a></li>
+                                <li><a href="#">ПРАВОкація»</a></li>
+                                <li><a href="#">Про Карпати</a></li>
+                                <li><a href="#">Прямим текстом</a></li>
+                                <li><a href="#">Хто тут живе?</a></li>
+                                <li><a href="#">Чвертка з паном Марциняком</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="large-12 columns">
+                        <div class="box-list_links media_efir">
+                            <header><h5>Ефір</h5></header>
+                            <ul class="large-2 columns">
+                                <li class="title">12 канал: будні</li>
+                                <li>04:00 - 06:00</li>
+                                <li>12:00 - 14:00</li>
+                                <li>21:00 - 24:00</li>
+                            </ul>
+                            <ul class="large-3 columns">
+                                <li class="title">12 канал: Вихідні та святкові</li>
+                                <li>02:00 - 08:00</li>
+                                <li>21:00 - 24:00</li>
+                            </ul>
+                            <ul class="large-7 columns">
+                                <li class="title">Цілодобово</li>
+                                <li>
+                                    У мережі кабельного телебачення Західного регіону<br/> України, Києва та Київської області.<br/>
+                                    Супутник AMOS 2 4W  частота - 11609.75 МГц.;<br/>
+                                    FEC 3/4; 3600 Ксимв./сек, поляризація горизонтальна.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="large-4 columns">
+            <div class="large-12 columns">
+                <p class="white">© 2004-2012 Західна інформаційна корпорація</p>
+
+                <p>За зміст рекламної інформації відповідальність несе рекламодавець.</p>
+            </div>
+        </div>
+        <div class="large-8 columns">
+            <div class="large-8 columns">
+                <p>Інформація «ЗІКу» є інтелектуальною власністю ТОВ «Західна інформаційна корпорація». За повного чи часткового використання текстів та зображень чи за будь-якого іншого поширення інформації «ЗІКу» гіперпосилання на сайт «Західної інформаційної корпорації» – www.zik.ua – є обов'язковим.</p>
+            </div>
+            <div class="large-3 columns">
+                <div class="count_site">
+                    <img src="img/bigmir.jpg" alt="bigmir" />
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    document.write('<script src=' +
+            ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+            '.js><\/script>')
+</script>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/foundation.min.js"></script>
+
+<script src="js/jquery.sidr.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script>
+    $(document).foundation();
+    $('#responsive-menu-button').sidr({
+        name: 'sidr-main',
+        source: '#navigation'
+    });
+    $(".wrap_list_news ul").mCustomScrollbar();
+
+    $(".toggle-topbar a").click(function(){
+        $(this).toggleClass("open");
+    });
+    /* Add class search box " open" */
+    $("#search_box").click(function(){
+        $(".search_box_media").toggleClass("open");
+    })
+</script>
+
+</body>
+</html>

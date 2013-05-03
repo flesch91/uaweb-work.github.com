@@ -6498,6 +6498,80 @@ ul.tabs_right {
     .box.padding_bg .section-container {
       margin-bottom: 0; }
 
+/************
+  Page photos
+*************/
+@media only screen and (max-width: 955px) {
+  .photos_page_hiden {
+    display: none !important; } }
+
+.photos_page {
+  display: none; }
+  @media only screen and (max-width: 850px) {
+    .photos_page {
+      display: blocl !important; } }
+
+.photos_list ul {
+  margin: 0;
+  padding: 0; }
+.photos_list li {
+  list-style: none;
+  margin-bottom: 2.1875em; }
+  @media only screen and (max-width: 600px) {
+    .photos_list li {
+      width: 50% !important; } }
+.photos_list [class*="column"] + [class*="column"]:last-child {
+  float: left; }
+.photos_list .photo_img {
+  position: relative;
+  padding-top: 1.5625em;
+  padding-bottom: 63.8%;
+  height: 0;
+  margin-bottom: 10px;
+  overflow: hidden; }
+  .photos_list .photo_img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; }
+  .photos_list .photo_img .caption {
+    position: absolute;
+    padding: 0.5em 0.5em 0.5em 2.5em;
+    background-color: #000;
+    background: url("../img/icon_photo.png") 7px 9px no-repeat rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    font-size: 0.625em;
+    color: #b4b2b2;
+    line-height: 18px; }
+.photos_list .title {
+  color: #3d484d;
+  font-size: 0.875em;
+  line-height: 1.1875em;
+  display: block;
+  margin-bottom: 5px; }
+  .photos_list .title:hover {
+    color: #697d82; }
+.photos_list .data {
+  color: #999;
+  font-size: 0.625em;
+  float: left;
+  margin-right: 8px; }
+.photos_list i {
+  background: url("../img/icon_data_view_comm.png") left top no-repeat;
+  width: 8px;
+  height: 8px;
+  display: block;
+  float: left;
+  margin-right: 8px;
+  margin-top: 4px; }
+.photos_list .post-comment {
+  color: #999;
+  font-size: 0.625em;
+  float: left; }
+  .photos_list .post-comment i {
+    background-position: -16px -13px; }
+
 /*****************
   slider plus view
 ******************/
@@ -6521,6 +6595,7 @@ ul.tabs_right {
       color: #fff;
       position: absolute;
       bottom: 0;
+      background: #000;
       background: rgba(0, 0, 0, 0.7);
       padding: 1.25em;
       font-size: 0.75em;
@@ -6566,6 +6641,90 @@ ul.tabs_right {
       list-style: none;
       float: left;
       margin-right: 1px; }
+
+/*******
+  Arxive
+********/
+.arxive_arrow {
+  position: relative; }
+  .arxive_arrow .arrow_left,
+  .arxive_arrow .arrow_right {
+    background: #fff;
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    top: -9px;
+    left: 0;
+    cursor: pointer; }
+  .arxive_arrow .arrow_right {
+    left: inherit;
+    right: 0; }
+  .arxive_arrow .arrow_left i,
+  .arxive_arrow .arrow_right i {
+    background: url("../img/arrow_arxive.png") left top no-repeat;
+    width: 10px;
+    height: 19px;
+    position: absolute;
+    display: block;
+    left: 0; }
+  .arxive_arrow .arrow_right i {
+    background-position: 0 -19px;
+    left: inherit;
+    right: 0; }
+
+.wrap_archive {
+  margin: 0;
+  padding: 0; }
+.wrap_archive li {
+  list-style: none;
+  margin-bottom: 1.875em; }
+  @media only screen and (max-width: 955px) {
+    .wrap_archive li {
+      width: 100% !important; } }
+.wrap_archive [class*="column"] + [class*="column"]:last-child {
+  float: left; }
+.wrap_archive h5 {
+  font-family: pf_dindisplay_promedium;
+  font-size: 1em;
+  color: #3c3f45;
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase; }
+.wrap_archive table {
+  border: none;
+  border-collapse: collapse; }
+  @media only screen and (max-width: 955px) {
+    .wrap_archive table {
+      width: 100% !important; } }
+  .wrap_archive table td {
+    padding: 4px 0.8125em; }
+    .wrap_archive table td:hover {
+      background: #f2f2f2; }
+      .wrap_archive table td:hover a {
+        color: #0288b5; }
+    .wrap_archive table td.empty:hover {
+      background: none; }
+  .wrap_archive table thead tr {
+    border-bottom: 3px solid #ededed; }
+  .wrap_archive table thead th {
+    font-family: pf_dindisplay_promedium !important;
+    font-size: 0.875em;
+    font-weight: normal;
+    color: #cccccc;
+    background: #fff;
+    text-align: center; }
+    .wrap_archive table thead th.sunday {
+      color: #00709a; }
+  .wrap_archive table tbody tr {
+    border-bottom: 1px solid #ededed; }
+  .wrap_archive table tbody tr:last-child {
+    border-bottom: none; }
+  .wrap_archive table tbody td {
+    color: #696969;
+    background: #fff;
+    text-align: center; }
+    .wrap_archive table tbody td a {
+      color: #696969; }
 
 /*********
   Footer

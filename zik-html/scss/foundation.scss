@@ -2717,6 +2717,84 @@ ul.tabs_right{
   }
 }
 
+/************
+  Page photos
+*************/
+.photos_page_hiden{
+  @media only screen and (max-width: 955px){display: none !important;}
+}
+.photos_page{
+  display: none;
+  @media only screen and (max-width: 850px){display: blocl !important;}
+}
+.photos_list{
+  ul{margin: 0; padding: 0}
+  li{
+    list-style: none;
+    margin-bottom: emCalc(35px);
+    @media only screen and (max-width: 600px){width: 50% !important;}
+  }
+  [class*="column"] + [class*="column"]:last-child {float: left}
+  .photo_img{
+    position: relative;
+    padding-top: 1.5625em;
+    padding-bottom: 63.8%;
+    height: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    img{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .caption{
+      position: absolute;
+      padding: emCalc(8px) emCalc(8px) emCalc(8px) emCalc(40px);
+      background-color: #000;
+      background: url("../img/icon_photo.png") 7px 9px no-repeat rgba(0,0,0,.7);
+      bottom: 0;
+      font-size: emCalc(10px);
+      color: #b4b2b2;
+      line-height: 18px;
+    }
+  }
+
+  .title{
+    color: #3d484d;
+    font-size: emCalc(14px);
+    line-height: emCalc(19px);
+    display: block;
+    margin-bottom: 5px;
+
+    &:hover{color: #697d82;}
+  }
+  .data{
+    color: #999;
+    font-size: emCalc(10px);
+    float: left;
+    margin-right: 8px;
+  }
+  i{
+    background: url("../img/icon_data_view_comm.png") left top no-repeat;
+    width: 8px;
+    height: 8px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    margin-top: 4px;
+  }
+  .post-comment{
+    color: #999;
+    font-size: emCalc(10px);
+    float: left;
+
+    i{background-position: -16px -13px;}
+  }
+}
+
+
 
 /*****************
   slider plus view
@@ -2743,6 +2821,7 @@ ul.tabs_right{
       color: #fff;
       position: absolute;
       bottom: 0;
+      background: #000;
       background: rgba(0,0,0,.7);
       padding: emCalc(20px);
       font-size: emCalc(12px);
@@ -2784,6 +2863,104 @@ ul.tabs_right{
     }
     ul{margin: 0; padding: 0; width: 2000em}
     li{list-style: none; float: left; margin-right: 1px}
+  }
+}
+
+/*******
+  Arxive
+********/
+.arxive_arrow{
+  position: relative;
+  .arrow_left,
+  .arrow_right{
+    background: #fff;
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    top: -9px;
+    left: 0;
+    cursor: pointer;
+  }
+  .arrow_right{
+    left: inherit;
+    right: 0;
+  }
+
+  .arrow_left,
+  .arrow_right{
+    i{
+      background: url("../img/arrow_arxive.png") left top no-repeat;
+      width: 10px;
+      height: 19px;
+      position: absolute;
+      display: block;
+      left: 0;
+    }
+  }
+  .arrow_right i{
+    background-position: 0 -19px;
+    left: inherit;
+    right: 0;
+  }
+}
+.wrap_archive{
+  &{margin: 0; padding: 0}
+
+  li{
+    list-style: none;
+    margin-bottom: emCalc(30px);
+    @media only screen and (max-width: 955px){width: 100% !important;}
+  }
+  [class*="column"] + [class*="column"]:last-child {float: left}
+  h5{
+    font-family: pf_dindisplay_promedium;
+    font-size: emCalc(16px);
+    color: #3c3f45;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  table{
+    @media only screen and (max-width: 955px){width: 100% !important;}
+    border: none;
+    border-collapse: collapse;
+
+    td{
+      padding: 4px emCalc(13px);
+      &:hover{
+        background: #f2f2f2;
+
+        a{color: #0288b5}
+      }
+      &.empty{
+        &:hover{background: none}
+      }
+    }
+
+
+    thead tr{border-bottom: 3px solid #ededed;}
+    thead th{
+      font-family: pf_dindisplay_promedium !important;
+      font-size: emCalc(14px);
+      font-weight: normal;
+      color: #cccccc;
+      background: #fff;
+      text-align: center;
+
+      &.sunday{color: #00709a}
+    }
+
+    tbody tr{border-bottom: 1px solid #ededed;}
+    tbody tr:last-child{border-bottom: none}
+    tbody td{
+      color: #696969;
+      background: #fff;
+      text-align: center;
+      a{
+        color: #696969;
+      }
+    }
   }
 }
 
