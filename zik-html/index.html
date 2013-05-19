@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZIK.UA</title>
   <link rel="stylesheet" href="css/fonts/stylesheet.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -1351,15 +1351,29 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/foundation.min.js"></script>
 
-<script src="js/jquery.sidr.min.js"></script>
+<!--<script src="js/jquery.sidr.min.js"></script>-->
+<script src="js/jquery.jpanelmenu.min.js"></script>
+
 <script src="js/jquery.mCustomScrollbar.min.js"></script>
   <script>
     $(document).foundation();
-    $('#responsive-menu-button').sidr({
+
+    var jPM = $.jPanelMenu({
+        menu: '#navigation',
+        trigger: '#responsive-menu-button'
+    });
+    jPM.on();
+
+  /*  $('#responsive-menu-button').sidr({
         name: 'sidr-main',
         source: '#navigation'
     });
+   */
+
     $(".wrap_list_news ul").mCustomScrollbar();
+
+
+
 
     $(".toggle-topbar a").click(function(){
         $(this).toggleClass("open");

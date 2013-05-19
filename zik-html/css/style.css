@@ -3932,7 +3932,8 @@ header {
     width: 300%; }
   .sponsors a {
     margin-right: 10px;
-    vertical-align: top; }
+    vertical-align: middle;
+    display: inline-block; }
   @media only screen and (max-width: 767px) {
     .sponsors .sponsors_list {
       padding-left: 101px; } }
@@ -3971,11 +3972,15 @@ header {
   position: absolute;
   z-index: 2;
   background: #2b2d31;
-  width: 100%;
+  width: 103%;
   left: 0;
-  top: 44px;
+  top: 43px;
   padding: 15px 20px 16px;
-  display: none; }
+  margin-left: -27px;
+  display: none;
+  -webkit-box-shadow: 0px 5px 4px rgba(50, 50, 50, 0.22);
+  -moz-box-shadow: 0px 5px 4px rgba(50, 50, 50, 0.22);
+  box-shadow: 0px 5px 4px rgba(50, 50, 50, 0.22); }
   .other_project .other_project_list_links ul {
     background: url("../img/border_1px_silver.jpg") right top repeat-y;
     margin: 0;
@@ -6788,3 +6793,18 @@ html, body {
   @media only screen and (max-width: 415px) {
     .footer .links_white_under {
       display: none; } }
+
+/******************
+  JSmenu responsive
+*******************/
+#jPanelMenu-menu {
+  background: #373737; }
+  #jPanelMenu-menu ul {
+    float: inherit !important; }
+  #jPanelMenu-menu ul li {
+    border-bottom: 1px solid #656565; }
+    #jPanelMenu-menu ul li a {
+      color: #ffffff;
+      padding: 10px 10px;
+      display: block;
+      border-bottom: 1px solid #000; }
